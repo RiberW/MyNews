@@ -1,0 +1,1813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34890A281B9060040035DCFC /* RJCustomCMS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34890A271B9060040035DCFC /* RJCustomCMS.xib */; };
+		34890A2B1B9060FA0035DCFC /* RJCustomCMSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34890A2A1B9060FA0035DCFC /* RJCustomCMSCell.m */; };
+		34890A2E1B9092C60035DCFC /* RJCustomHDPICCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34890A2D1B9092C60035DCFC /* RJCustomHDPICCell.m */; };
+		34890A301B9092F30035DCFC /* RJCustomHDPIC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34890A2F1B9092F30035DCFC /* RJCustomHDPIC.xib */; };
+		34890A331B90A0610035DCFC /* RJCustomVIDEOCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34890A321B90A0610035DCFC /* RJCustomVIDEOCell.m */; };
+		34890A351B90A0780035DCFC /* RJCustomVIDEO.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34890A341B90A0780035DCFC /* RJCustomVIDEO.xib */; };
+		34890A371B90A7600035DCFC /* RJCustomURL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34890A361B90A7600035DCFC /* RJCustomURL.xib */; };
+		34890A3A1B90A7750035DCFC /* RJCustomURLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34890A391B90A7750035DCFC /* RJCustomURLCell.m */; };
+		34B499831B9313A400422396 /* RJCustomHDPIC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B499821B9313A400422396 /* RJCustomHDPIC.xib */; };
+		34BE472F1B9BF83700CDF470 /* RJPictureDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34BE472E1B9BF83700CDF470 /* RJPictureDetailView.xib */; };
+		34BE47321B9BFD5100CDF470 /* RJPictureDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE47311B9BFD5100CDF470 /* RJPictureDetailView.m */; };
+		E64CE70CD7C26FFD87FA076B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D233556FDC79AE6279A47D /* libPods.a */; };
+		FCE9601B2A54CA9C629AC2F1 /* ic_download_picture_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9604E07DC07877D392638 /* ic_download_picture_normal.png */; };
+		FCE960236CAC457854653B13 /* RJFileDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE964128191F7FB578B6E56 /* RJFileDownloadModel.m */; };
+		FCE960328F1556878C733B60 /* nonetwork.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96B0E8B3606CFAEAE5AA3 /* nonetwork.png */; };
+		FCE9604794F056BC660FA7DE /* ic_title_back_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9642DDCFA3DCE00AAE296 /* ic_title_back_pic.png */; };
+		FCE96056AD61CBCDD3021827 /* RJNewsFSO.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE966AEDBB3FF61CE6B1833 /* RJNewsFSO.m */; };
+		FCE9606D224B62EB99CDECE5 /* RJNewsJsonToVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE967F7912658F0DE2C0ECA /* RJNewsJsonToVideo.m */; };
+		FCE9606EB3C02F05C6B2D505 /* ic_title_like_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96A0EB92E769F5D6B3B5A /* ic_title_like_pic_night.png */; };
+		FCE96073EDCA1D1A7DBC2ABF /* ic_setting_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96DE0C0F0450F6D4273EC /* ic_setting_selected.png */; };
+		FCE9608641A564FB96EA8AC7 /* CellContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9626A1816E48B2136015E /* CellContext.m */; };
+		FCE960C3465AD9302133EA26 /* RJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9631B07A726578F3278E6 /* RJAppDelegate.m */; };
+		FCE960D0AD670A0209A9701D /* ic_title_has_liked_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96DA1357DC90D69955472 /* ic_title_has_liked_pic_clicked_night.png */; };
+		FCE960D98856F7A2EB803BCF /* ic_title_like_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9649AD06E59C106424809 /* ic_title_like_night.png */; };
+		FCE961025E5EFD2A3F877FB5 /* RJNewsCellDataVM.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96BA26075FEC517A1F419 /* RJNewsCellDataVM.m */; };
+		FCE96105FFC6F53E30A65F28 /* ic_title_has_liked_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE969894FF35245625CC0DF /* ic_title_has_liked_clicked.png */; };
+		FCE96122C3BBFC0C33A914B4 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE960705005390109BEAF99 /* TAPageControl.m */; };
+		FCE96139345670875A717555 /* RJPictureDao.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9641C52A136182C808A45 /* RJPictureDao.m */; };
+		FCE9615E561F5C55FAD9616E /* RJPictureCellPM.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE960FCA2F88223FB5A2F5A /* RJPictureCellPM.m */; };
+		FCE96165DEE6F041ECED0479 /* RJNewsVideoDataObjectVI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96132C3D7F6D5DB991A66 /* RJNewsVideoDataObjectVI.m */; };
+		FCE9617A554448B58C360E3E /* RJNewsType.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE967DBC58F762E140B74F0 /* RJNewsType.m */; };
+		FCE96180678A4F316059CE24 /* ic_title_collect_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96EACB846B20A370ED599 /* ic_title_collect_clicked.png */; };
+		FCE96180B09128B1AD190A32 /* RJNewsVideo2Object.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96D86669B2291C8E8B5DF /* RJNewsVideo2Object.m */; };
+		FCE961E8533636BBA8C4200C /* RJNewsNewsCommentCountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE965195FD4C566CF9D1B80 /* RJNewsNewsCommentCountInfo.m */; };
+		FCE961E95CF1C72B5BA69988 /* RJPictureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A970E841851F610A8C6 /* RJPictureDetailController.m */; };
+		FCE96200E96FA5CBE145DE23 /* RJNewsTypeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9620F8B7D5AB8EDBE5AB1 /* RJNewsTypeScrollView.m */; };
+		FCE96230B50181E93CC7F11C /* ic_title_back.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96A41FA25C77FF2E2C1B3 /* ic_title_back.png */; };
+		FCE962557DA7D7952CB2B5CB /* RJNewsHttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE960BDE9C91C0E5CC964AD /* RJNewsHttpHelper.m */; };
+		FCE9627CF4F42D698D3F5FCB /* ic_title_back_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9607880474F8512B7554E /* ic_title_back_clicked.png */; };
+		FCE962B95548A832E26947B6 /* ic_user_guid_click_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96DA05AC0F22D7891A0EB /* ic_user_guid_click_night.png */; };
+		FCE962F630D46F9591B8C372 /* channel_hot_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE968246E8F6E06A043EBA1 /* channel_hot_unselected.png */; };
+		FCE962FA40038679A7E2017A /* RJNewsURLController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96782995C12D6082BD1D6 /* RJNewsURLController.m */; };
+		FCE9630CE3FA679D2436DD2A /* ic_title_back_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9696CE096D8AB9679AD3F /* ic_title_back_night.png */; };
+		FCE9631915F2E0D76C7DFBA6 /* topimage.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C4E132D606B961B4B7D /* topimage.png */; };
+		FCE963291E2FD1CD0519B878 /* RJNewsPictureListPicsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE967BA0E9125B5C5131FC3 /* RJNewsPictureListPicsObject.m */; };
+		FCE9632A8B1A08AEBC690B05 /* RJColloectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE965590154127A149A73CD /* RJColloectModel.m */; };
+		FCE96350A4DBF4E876E6043C /* RJNewsCellJsonToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B2ACAE0BE220D08AD3C /* RJNewsCellJsonToModel.m */; };
+		FCE96372313967F4743FD04F /* RJNewsTypeScrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C419E07721CC408947C /* RJNewsTypeScrollView.txt */; };
+		FCE963BA71D8D18950564C33 /* RJNewsPictureListPicsCCI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE964B325A71C375C85F4F6 /* RJNewsPictureListPicsCCI.m */; };
+		FCE963D2A4CF3366D9FFB2E5 /* RJNewsHdpic2.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A7A124D186C7DFB80CB /* RJNewsHdpic2.m */; };
+		FCE963D84DC062F8AC79B7CB /* ic_title_has_collected_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C592045B396014447C0 /* ic_title_has_collected_pic_night.png */; };
+		FCE963EE592C613DF9E6CC5A /* RJPictureCellJsonToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96452ED282E8810169A40 /* RJPictureCellJsonToModel.m */; };
+		FCE96401029C868D0CF3793F /* RJNewsCellDataPics.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96C4DD3A75E970ED45AA2 /* RJNewsCellDataPics.m */; };
+		FCE9640785C10FA9A450C670 /* RJNewsVideoData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9674C8C75FDA878FC2DDA /* RJNewsVideoData.m */; };
+		FCE9640C1555630FAD883A82 /* ic_setting_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9674DBD8B74B1796F010B /* ic_setting_normal.png */; };
+		FCE9640FF0E1CFA99F580D67 /* RJNewsNewsData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE966557B2D02409BC1B4C4 /* RJNewsNewsData.m */; };
+		FCE9642CBB86290AC27FF568 /* RJPictureCellPMData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96296A0067EDB54E1ECBE /* RJPictureCellPMData.m */; };
+		FCE9644364357BC227878DB5 /* RJNewsNewsListObjectVI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE964BCB5F790E2FBD87AE7 /* RJNewsNewsListObjectVI.m */; };
+		FCE964607A2D2F4A85924064 /* RJNewsHdpicList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96091D54EC47C5E6BFD44 /* RJNewsHdpicList.m */; };
+		FCE964761435AFD2BC24F93D /* RJPictureCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96638166410A20A3D07E0 /* RJPictureCellData.m */; };
+		FCE964779D458F053A02DBEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE96BE5DA1772E92D301A71 /* LaunchScreen.xib */; };
+		FCE9647B3D6E0AADBB761287 /* RJNewsNews2Object.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96FCED9C934C5FEA1EC69 /* RJNewsNews2Object.m */; };
+		FCE96491D2DE6E42DBA4E0CA /* RJNewsNewsListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE966F7989198A8DA8E5267 /* RJNewsNewsListObject.m */; };
+		FCE964965C86B0CECA11962E /* RJNewsNewsHeadLinesList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96D6AFB0F22BF8B882616 /* RJNewsNewsHeadLinesList.m */; };
+		FCE964B5BE599EFEC7B9BCDD /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96C7CEC86143BA0FC11AF /* CoreStatus.m */; };
+		FCE964D9CEAC3A25F09B11F7 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961A5A2D6B5640A9D5D9E /* f.png */; };
+		FCE964DD1DB724679CDB8182 /* ic_title_collect_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96B1A1269240CF1E93016 /* ic_title_collect_pic_clicked.png */; };
+		FCE964E0BA6E8175BE455625 /* RJNewsNewsPicsListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9668FDACDCB59324647F3 /* RJNewsNewsPicsListObject.m */; };
+		FCE964E4B7F5770B4FA483D3 /* ic_live_event_title_share_n.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96B3C0DC3E68E43145805 /* ic_live_event_title_share_n.png */; };
+		FCE964FE8D4EB756186FCE60 /* ic_title_repost_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9685E1B1299714086F8E6 /* ic_title_repost_night.png */; };
+		FCE9651155C8B38FD76EF640 /* RJNewsCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE967FEEA2F9AC5BDDA2FBB /* RJNewsCellData.m */; };
+		FCE9651BB916019BEF4EAF98 /* ic_title_repost_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961F9A350FB107AA4C022 /* ic_title_repost_pic_night.png */; };
+		FCE9651F941318D4352D6418 /* ic_user_guid_back_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE968CB94E7BDACE20F60AA /* ic_user_guid_back_night.png */; };
+		FCE9653CC93DDF2AA6D1683A /* ic_title_repost_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9664B2BC172C123D3FFD0 /* ic_title_repost_clicked.png */; };
+		FCE9653FC1D3C748BEBCEA77 /* ic_user_guid_back.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96E68EEB46AE62D03A226 /* ic_user_guid_back.png */; };
+		FCE965564EEAA7C83BF68776 /* ic_title_has_liked_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96E70717DF49D6AB830D8 /* ic_title_has_liked_pic.png */; };
+		FCE9658502564A630F344B1F /* RJNewsNewsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9675D96E6EB6E1DC72C23 /* RJNewsNewsHelper.m */; };
+		FCE965BEC859A1BE75EEADDA /* RJPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96E70B261541632E25045 /* RJPictureViewController.m */; };
+		FCE965C450D8B3452E09212F /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B8BAB82F94640844C06 /* SDCycleScrollView.m */; };
+		FCE965C8C815768BBDACF983 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96F530B679498FB05644D /* MBProgressHUD+MJ.m */; };
+		FCE965D708F8786B08FEE319 /* channel_pic_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE969E36EE021D64B65B032 /* channel_pic_unselected.png */; };
+		FCE965DD694960CB2B81C627 /* ic_title_has_liked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96E0FA5048422CC901796 /* ic_title_has_liked_night.png */; };
+		FCE9662A76B03B6EAF25BEC4 /* RJNewsNewsPicsList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96F73A37F3F4C0087B81D /* RJNewsNewsPicsList.m */; };
+		FCE9663A1934294E2B41BDFF /* RJNewsNews2.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9668697811D9233619E28 /* RJNewsNews2.m */; };
+		FCE96669895F21BC8BC228E9 /* z.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE966816E4D9388586F24AB /* z.png */; };
+		FCE96673E64B396B3745B931 /* CMSCellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A938C32D8F1C22EE01B /* CMSCellStrategy.m */; };
+		FCE9667B9911BC34947F861A /* RJNewsPictureListPics.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96364038F262C2F6A723F /* RJNewsPictureListPics.m */; };
+		FCE9667EC26D7F5F441D6228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9660990125E3F7BE3D657 /* main.m */; };
+		FCE9669403D71F23B8671A9A /* ic_title_repost_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96AC288B68AF07B281E5E /* ic_title_repost_pic_clicked_night.png */; };
+		FCE966AD4A51C77EFAC0EF7C /* RJNewsVedioInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B75170E76B760CAD0FB /* RJNewsVedioInfo.m */; };
+		FCE966C5A20F3DFEA92F02B1 /* channel_pic_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96EDE20F10952ADC6BEEC /* channel_pic_selected.png */; };
+		FCE966E84F27F0BC4FDDCC30 /* RJNewsPictureList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9621D5F7E3BFC33E8BA70 /* RJNewsPictureList.m */; };
+		FCE966E8DDE5A14B4712EB2C /* RJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE962B686268340EEF12145 /* RJTabBarController.m */; };
+		FCE966F0C4FB3701F418F985 /* ic_live_video_play_big_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE964CE5D8F86B21FE8340A /* ic_live_video_play_big_normal.png */; };
+		FCE966F7426149B39050076A /* RJNewsVideoList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE969A8AA02563659A95EDD /* RJNewsVideoList.m */; };
+		FCE9673D111F06679EF452D5 /* RJNewsCellDataVMObjectDataVI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE961480EA2FBFEC9671A1F /* RJNewsCellDataVMObjectDataVI.m */; };
+		FCE96757D569752CFA4D0BB6 /* VIDEOCellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96855D81FC58582E5071D /* VIDEOCellStrategy.m */; };
+		FCE96762DB4BC88A64DFF99A /* RJRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE966F60BA85090B795EECB /* RJRequestParam.m */; };
+		FCE9678EEE245A06398D67E2 /* RJPictureCellPMObjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE962D4D133F54B2B0F33E7 /* RJPictureCellPMObjectData.m */; };
+		FCE967AD9EBB4278B578A384 /* ic_live_event_title_back_n.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9603E687EE14CC769CB8D /* ic_live_event_title_back_n.png */; };
+		FCE967B8A67FBE9C396E0AA9 /* RJNewsCellDataVMData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B536BEA3571AD8C8C15 /* RJNewsCellDataVMData.m */; };
+		FCE967C238A8C1616652B0F0 /* RJNewsPictureListObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE969E18E499565D2C90C84 /* RJNewsPictureListObject.m */; };
+		FCE967CB5CF1E8661F411008 /* RJNewsCellDataPicsData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96415C2C9C856F6E156BC /* RJNewsCellDataPicsData.m */; };
+		FCE96804633952EDE95BD682 /* ic_title_like.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9685AC89C77C539FF9198 /* ic_title_like.png */; };
+		FCE96809758A868815F5DBA4 /* ic_title_collect_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE965980979D1E2A68196F1 /* ic_title_collect_clicked_night.png */; };
+		FCE968273DEB3ABF72A029A4 /* RJColloectModelService.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A8BBA49C768C7F75810 /* RJColloectModelService.m */; };
+		FCE96837024189D35FDA829D /* RJNewsVideoListt.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE965AD64572A0D9CF3F1EC /* RJNewsVideoListt.m */; };
+		FCE96838AE4E39BDD7CE7652 /* ic_title_has_liked_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96F0265730F8707F2A3EF /* ic_title_has_liked_pic_night.png */; };
+		FCE9683F71E5BE7F39363125 /* ic_title_like_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE966024291A885DC2E146F /* ic_title_like_pic.png */; };
+		FCE96857D68129AE76327285 /* ic_title_repost_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE962BAF207DE98084FD277 /* ic_title_repost_pic_clicked.png */; };
+		FCE96862040C07981549B772 /* channel_video_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9645FB4E5AA79112EB6BD /* channel_video_selected.png */; };
+		FCE9686C60B2C5E6A65E2F08 /* RJNewsCellDataVMDataVI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A2B402DC397CF203100 /* RJNewsCellDataVMDataVI.m */; };
+		FCE96878FE4A0871D3F03142 /* ic_title_like_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE962A073FCAB5CA29407F7 /* ic_title_like_pic_clicked.png */; };
+		FCE968C16F71AA129B541919 /* ic_title_more_pressed_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9617B1F37E2B366FC70AF /* ic_title_more_pressed_night.png */; };
+		FCE968C40E6E1D6AC5D3C9CA /* ic_title_collect_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96B264471094D57235E1C /* ic_title_collect_pic_clicked_night.png */; };
+		FCE968D94035037AA8ADBDB7 /* RJNewsHdpic2Object.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE961C6450B22DD75C7B808 /* RJNewsHdpic2Object.m */; };
+		FCE968EB5B892194694BB301 /* RJVideoDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9605B265D8A0E2B2D9466 /* RJVideoDownloadController.m */; };
+		FCE968EFA5548BB5D2A6E2E0 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96FDC542FC85788015DCD /* TAAnimatedDotView.m */; };
+		FCE968F2F91860EF3F29C261 /* channel_video_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE969C44187B6439A6E78AC /* channel_video_unselected.png */; };
+		FCE9690B759A08D9A587E8D2 /* ic_living_feed_compete_share.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C1A78E21BE5C03AD875 /* ic_living_feed_compete_share.png */; };
+		FCE9690DEF06FF77AAB13AA7 /* ic_title_has_collected_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C90629DA0AEE2FCC4A8 /* ic_title_has_collected_pic_clicked_night.png */; };
+		FCE9693C7F3ED44FD5152402 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96CDE28DF4C953AAE5878 /* SDCollectionViewCell.m */; };
+		FCE969584BE3C8C8BDC09BA9 /* RJNewsData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96BF08D904CA46CC62EC1 /* RJNewsData.m */; };
+		FCE9695D891AAE5B307B2555 /* ic_user_guid_change_channel_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9697F333D522AE626302D /* ic_user_guid_change_channel_night.png */; };
+		FCE9696F478586A15AEEB6E6 /* RJNewsNewsHeadLines.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE969E6F2F1A4495F851BBC /* RJNewsNewsHeadLines.m */; };
+		FCE96994CA7407F75BE71F39 /* RJPictureCellPMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96956D13F5D7C3BADEC25 /* RJPictureCellPMObject.m */; };
+		FCE96A0CAAE0539499AB08CA /* RJNewsGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9664B30C1CA6EEC23FD4B /* RJNewsGroups.m */; };
+		FCE96A1EB065B47DB6CE17BD /* RJNewsTypeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96125FA1491F7D9FDD1EC /* RJNewsTypeButton.m */; };
+		FCE96A24329A3BD57D9055E3 /* ic_title_has_collected_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96CF1FD0CC0312200A8EA /* ic_title_has_collected_clicked.png */; };
+		FCE96A3CCDBEF49980A0C933 /* ic_title_repost.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961EAC785E6706DA27C76 /* ic_title_repost.png */; };
+		FCE96A44755C64FA795D193F /* ic_title_more.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961A4C54DBD913D2C6A2D /* ic_title_more.png */; };
+		FCE96A5A598CC34C3D1AA6A4 /* RJNewsVideo2.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96DBECB2EB4DF746B12EE /* RJNewsVideo2.m */; };
+		FCE96A9A76BECC2FC9721999 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE962D81EC37D11BF499716 /* Images.xcassets */; };
+		FCE96ACE1A962A2210AFAD1C /* RJVideoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96E6D441BDC748FD0BFA3 /* RJVideoDetailController.m */; };
+		FCE96AF7D2F137E0F3A692D8 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96DB9A932299BB3C0A558 /* UIView+SDExtension.m */; };
+		FCE96B01F4E11A510EF7CC39 /* RJNewsTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96C4F5640343926F90CB2 /* RJNewsTypeController.m */; };
+		FCE96B099B31FA50772113E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE96ADDEAAE11921A067119 /* Main.storyboard */; };
+		FCE96B2089FEBC052728BA69 /* ic_title_like_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE966CD9BB5BE8812ABFA40 /* ic_title_like_clicked.png */; };
+		FCE96B2F3645BCF20DE5F3C7 /* RJCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96716D8FDE1665FD481BE /* RJCustomCell.m */; };
+		FCE96B34F6CD43C191C33851 /* RJNewsCellDataVMObjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96FB03CB75FA86F3459CF /* RJNewsCellDataVMObjectData.m */; };
+		FCE96B5D16BBD9A830AC2D9A /* channel_hot_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961C44FFED62F84A03DC6 /* channel_hot_selected.png */; };
+		FCE96B67FA4F92209F9A9AA7 /* RJVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96144623AAB0C35780692 /* RJVideoViewController.m */; };
+		FCE96B809222BA0890A0EE27 /* ic_title_has_collected.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96752A4AFF960263E131B /* ic_title_has_collected.png */; };
+		FCE96B98E1DA665A68AF3052 /* ic_title_collect_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE967032D48CBE5C42C4E51 /* ic_title_collect_pic_night.png */; };
+		FCE96BAF33A4251C470113CC /* ic_title_back_pic_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9627E08AAD7F3C7505D5E /* ic_title_back_pic_night.png */; };
+		FCE96BC6CC47140B4E071A8B /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96CFF9A0F1708F73B7319 /* NSData+SDDataCache.m */; };
+		FCE96BD66D56ECAB976E9FDF /* RJFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE969464F198FD10B7ACA13 /* RJFileDownloadManager.m */; };
+		FCE96BDCAD383AFC95FB0254 /* ic_title_has_collected_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE961C8E847F6E897C382D2 /* ic_title_has_collected_clicked_night.png */; };
+		FCE96BEDA64ABB6BC081DE8E /* RJNewsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96EB781C06B829D31A793 /* RJNewsWebViewController.m */; };
+		FCE96C0C49395EFA9F569F19 /* RJNewsCellDataKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE965341E76E8D5003BDAC8 /* RJNewsCellDataKeys.m */; };
+		FCE96C1E140402CB20E8634C /* RJNewsSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96C8677721E6356DD5DB8 /* RJNewsSingleton.m */; };
+		FCE96C347E674865FF620F14 /* RJNewsCellDataKeysData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B929B4DD92243C642A5 /* RJNewsCellDataKeysData.m */; };
+		FCE96CA8053ED486DAD2CFB9 /* ic_title_repost_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE962865B3584A755E93780 /* ic_title_repost_pic.png */; };
+		FCE96CA8E31C7BBFD140D666 /* RJNewsJsonToNews.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE960AC8C7CA38A16AD5563 /* RJNewsJsonToNews.m */; };
+		FCE96CB4485F04826CA17DFA /* ic_title_has_collected_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96651E6EC3197B5DE23E4 /* ic_title_has_collected_pic_clicked.png */; };
+		FCE96CD1C9FC84E501732FD8 /* RJCustomCellHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96870721859F61E0FABA2 /* RJCustomCellHelper.m */; };
+		FCE96CF1658F551E20878307 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE968D00151EE27B03BE4A2 /* TADotView.m */; };
+		FCE96CF901DCCCCD21F047CB /* ic_title_collect.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE968DFF66A6397606CBBDF /* ic_title_collect.png */; };
+		FCE96D1FA382A5E25F575562 /* RJSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9657A44FB1078E913A19B /* RJSettingViewController.m */; };
+		FCE96D21C200E60664D1FA79 /* ic_title_has_collected_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96B47E51FF93480F455A9 /* ic_title_has_collected_night.png */; };
+		FCE96D2F864CDB68D270D83C /* RJNewsPictureListPicsList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9609E9B5ACA154E9C2407 /* RJNewsPictureListPicsList.m */; };
+		FCE96D66B5237A52167001F5 /* ic_title_more_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE968E599A44EA268E8C405 /* ic_title_more_pressed.png */; };
+		FCE96D9767BF662633430908 /* ic_title_collect_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96ADA40A11B9BF42CE772 /* ic_title_collect_night.png */; };
+		FCE96DB735F1FEBCE4EEEE78 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9604C51FC954ACDA31E92 /* TAAbstractDotView.m */; };
+		FCE96DC31D39CC6720EE0558 /* CellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9648B91C080281F728149 /* CellStrategy.m */; };
+		FCE96DD47DDCD036A7814797 /* ic_title_more_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96E5415F99B1380060774 /* ic_title_more_night.png */; };
+		FCE96DE178453E38E4C45F5E /* ic_title_back_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96A46258ECD3484692FB8 /* ic_title_back_pic_clicked.png */; };
+		FCE96DFBED08F99C31F64A29 /* RJNewsNewsList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE961D5BD4C45F5BDA926B8 /* RJNewsNewsList.m */; };
+		FCE96E0AD3FAFE165F0292EE /* ic_title_back_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96D419B6CCCE918B6E0AA /* ic_title_back_pic_clicked_night.png */; };
+		FCE96E107329472E651B4ACB /* ic_title_repost_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96CD3DCA9932FBD45A36D /* ic_title_repost_clicked_night.png */; };
+		FCE96E1A3F94F35778206AB6 /* ic_title_has_liked_pic_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96FD5B9864B8CCDEF6680 /* ic_title_has_liked_pic_clicked.png */; };
+		FCE96E6E60503CF9034A0552 /* MyNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9627882E481B5588EA670 /* MyNewsTests.m */; };
+		FCE96E73D30B804A608B0181 /* ic_title_collect_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96FEE7C33714AA6CD2DA9 /* ic_title_collect_pic.png */; };
+		FCE96E8408F2959627F16E74 /* URLCellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96A849447CDD072939395 /* URLCellStrategy.m */; };
+		FCE96E94A6E9693C714CD7FD /* RJNewsPictureData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96BA86EA0905FF7B1468A /* RJNewsPictureData.m */; };
+		FCE96EA5D55BC17ABAB9B20E /* RJNewsJsonToObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96EDBA6126EEC560E4D71 /* RJNewsJsonToObject.m */; };
+		FCE96EBCE666ECDDA36B888C /* ic_title_like_pic_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96EEF5C65348BA53E2E39 /* ic_title_like_pic_clicked_night.png */; };
+		FCE96EDC07028F6B9BDEA941 /* RJNewsVideoDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9605191A2EC4D5E6D7DC4 /* RJNewsVideoDataObject.m */; };
+		FCE96EDC892E64DD7A830760 /* RJNewsNewsHeadLinesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96F39C877A60A699ED23E /* RJNewsNewsHeadLinesObject.m */; };
+		FCE96EDD31E095C3E0BA0653 /* RJNewsFS.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE961A758D9D6038D9D1260 /* RJNewsFS.m */; };
+		FCE96EE3A4EC1E823FD6E7E1 /* ic_title_has_collected_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE9671C3FCE898112F26AB3 /* ic_title_has_collected_pic.png */; };
+		FCE96F092F516E92FA0218D6 /* RJNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9665DD513A3C0F1F28210 /* RJNewsViewController.m */; };
+		FCE96F137CF9C568A9E3837E /* RJNewsCellDataPicsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE968CAFD94043F13A72C55 /* RJNewsCellDataPicsObject.m */; };
+		FCE96F19964D984B908A05A8 /* RJNewsCellDataVMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE962FBABBE130B4888EA63 /* RJNewsCellDataVMObject.m */; };
+		FCE96F1E86D788A0A93AB7D0 /* RJNewsJsonToPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9631705FB29CA2180552F /* RJNewsJsonToPicture.m */; };
+		FCE96F22C0DA5DAE4B6F3B13 /* RJNewsNewsPics.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE961A8EEB8A6D54BFE95C6 /* RJNewsNewsPics.m */; };
+		FCE96F2B0C6330F4AB395A24 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96CFD1E1F537F55F7B25E /* Reachability.m */; };
+		FCE96F2B2BCDBDE0286A1FC1 /* ic_title_has_liked_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE962703194FA7B17037AC2 /* ic_title_has_liked_clicked_night.png */; };
+		FCE96F3F57008F610E449B38 /* HDPICCellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96778BA3B54A8BFB80A97 /* HDPICCellStrategy.m */; };
+		FCE96F5BB628EE41F215794F /* RJNewsFSList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96B422502F7DBC4ABFE5E /* RJNewsFSList.m */; };
+		FCE96F5CBBCE135584607FCB /* ic_user_guid_change_channel.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96542A1E23ACD87F39AD1 /* ic_user_guid_change_channel.png */; };
+		FCE96F677DA68DE0993AFB19 /* ic_title_has_liked.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE96C543C9B10DFD1FB46E4 /* ic_title_has_liked.png */; };
+		FCE96F8988CB925541866922 /* ic_title_like_clicked_night.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE966C38A575106EA2BA0C4 /* ic_title_like_clicked_night.png */; };
+		FCE96F977C93E648D8B4ABF7 /* SubjectCellStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE9676A9C79AD83FFB46CC9 /* SubjectCellStrategy.m */; };
+		FCE96FB17536518096D2A2C8 /* RJColloectModelDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE96C94CC215D2CAB4801E6 /* RJColloectModelDAO.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCE961B1D401C374CFFC483A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCE96B1A6B47527E45A8EA60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCE96927C95B326C14CCD0D5;
+			remoteInfo = MyNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D171A720EAE693A03B672EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		34890A271B9060040035DCFC /* RJCustomCMS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJCustomCMS.xib; sourceTree = "<group>"; };
+		34890A291B9060FA0035DCFC /* RJCustomCMSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomCMSCell.h; sourceTree = "<group>"; };
+		34890A2A1B9060FA0035DCFC /* RJCustomCMSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomCMSCell.m; sourceTree = "<group>"; };
+		34890A2C1B9092C60035DCFC /* RJCustomHDPICCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomHDPICCell.h; sourceTree = "<group>"; };
+		34890A2D1B9092C60035DCFC /* RJCustomHDPICCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomHDPICCell.m; sourceTree = "<group>"; };
+		34890A2F1B9092F30035DCFC /* RJCustomHDPIC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RJCustomHDPIC.xib; path = Classes/Sections/News/View/RJCustomHDPIC.xib; sourceTree = "<group>"; };
+		34890A311B90A0610035DCFC /* RJCustomVIDEOCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomVIDEOCell.h; sourceTree = "<group>"; };
+		34890A321B90A0610035DCFC /* RJCustomVIDEOCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomVIDEOCell.m; sourceTree = "<group>"; };
+		34890A341B90A0780035DCFC /* RJCustomVIDEO.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJCustomVIDEO.xib; sourceTree = "<group>"; };
+		34890A361B90A7600035DCFC /* RJCustomURL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJCustomURL.xib; sourceTree = "<group>"; };
+		34890A381B90A7750035DCFC /* RJCustomURLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomURLCell.h; sourceTree = "<group>"; };
+		34890A391B90A7750035DCFC /* RJCustomURLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomURLCell.m; sourceTree = "<group>"; };
+		34B499821B9313A400422396 /* RJCustomHDPIC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJCustomHDPIC.xib; sourceTree = "<group>"; };
+		34BE472E1B9BF83700CDF470 /* RJPictureDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJPictureDetailView.xib; sourceTree = "<group>"; };
+		34BE47301B9BFD5100CDF470 /* RJPictureDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureDetailView.h; sourceTree = "<group>"; };
+		34BE47311B9BFD5100CDF470 /* RJPictureDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureDetailView.m; sourceTree = "<group>"; };
+		B2D233556FDC79AE6279A47D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3D6F9EEEA84B2651D3AE43 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FCE96038B1EDE95A42E583CC /* RJColloectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJColloectModel.h; sourceTree = "<group>"; };
+		FCE9603E687EE14CC769CB8D /* ic_live_event_title_back_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_live_event_title_back_n.png; sourceTree = "<group>"; };
+		FCE9604C51FC954ACDA31E92 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		FCE9604E07DC07877D392638 /* ic_download_picture_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_download_picture_normal.png; sourceTree = "<group>"; };
+		FCE9605191A2EC4D5E6D7DC4 /* RJNewsVideoDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideoDataObject.m; sourceTree = "<group>"; };
+		FCE9605B265D8A0E2B2D9466 /* RJVideoDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJVideoDownloadController.m; sourceTree = "<group>"; };
+		FCE9605E85E235721186448C /* RJNewsGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsGroups.h; sourceTree = "<group>"; };
+		FCE960616EBC866421D786A1 /* RJColloectModelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJColloectModelService.h; sourceTree = "<group>"; };
+		FCE9606D2F711FA85D9A2E55 /* RJNewsNewsListObjectVI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsListObjectVI.h; sourceTree = "<group>"; };
+		FCE960705005390109BEAF99 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		FCE9607880474F8512B7554E /* ic_title_back_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_clicked.png; sourceTree = "<group>"; };
+		FCE9608799204BC5A7FEB8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE96091C22A01A5A281F302 /* RJNewsNews2Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNews2Object.h; sourceTree = "<group>"; };
+		FCE96091D54EC47C5E6BFD44 /* RJNewsHdpicList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsHdpicList.m; sourceTree = "<group>"; };
+		FCE9609E9B5ACA154E9C2407 /* RJNewsPictureListPicsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureListPicsList.m; sourceTree = "<group>"; };
+		FCE960A856AC3D55783843B6 /* RJNewsHttpHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsHttpHelper.h; sourceTree = "<group>"; };
+		FCE960AC8C7CA38A16AD5563 /* RJNewsJsonToNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsJsonToNews.m; sourceTree = "<group>"; };
+		FCE960BDE9C91C0E5CC964AD /* RJNewsHttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsHttpHelper.m; sourceTree = "<group>"; };
+		FCE960FCA2F88223FB5A2F5A /* RJPictureCellPM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellPM.m; sourceTree = "<group>"; };
+		FCE961078D7FB7A8291DBB54 /* URLCellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCellStrategy.h; sourceTree = "<group>"; };
+		FCE96113302C667D493A571D /* RJNewsNewsPicsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsPicsList.h; sourceTree = "<group>"; };
+		FCE96125FA1491F7D9FDD1EC /* RJNewsTypeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsTypeButton.m; sourceTree = "<group>"; };
+		FCE96132C3D7F6D5DB991A66 /* RJNewsVideoDataObjectVI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideoDataObjectVI.m; sourceTree = "<group>"; };
+		FCE9613B6FCD9E9CD6FCBC4A /* CellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellStrategy.h; sourceTree = "<group>"; };
+		FCE96144623AAB0C35780692 /* RJVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJVideoViewController.m; sourceTree = "<group>"; };
+		FCE961480EA2FBFEC9671A1F /* RJNewsCellDataVMObjectDataVI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVMObjectDataVI.m; sourceTree = "<group>"; };
+		FCE9617B1F37E2B366FC70AF /* ic_title_more_pressed_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_more_pressed_night.png; sourceTree = "<group>"; };
+		FCE9618E683B97EB10F52C94 /* RJNewsNewsHeadLinesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsHeadLinesList.h; sourceTree = "<group>"; };
+		FCE9619A2321E888086A42FB /* RJNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNews.h; sourceTree = "<group>"; };
+		FCE961A4C54DBD913D2C6A2D /* ic_title_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_more.png; sourceTree = "<group>"; };
+		FCE961A5A2D6B5640A9D5D9E /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
+		FCE961A758D9D6038D9D1260 /* RJNewsFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsFS.m; sourceTree = "<group>"; };
+		FCE961A8EEB8A6D54BFE95C6 /* RJNewsNewsPics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsPics.m; sourceTree = "<group>"; };
+		FCE961C44FFED62F84A03DC6 /* channel_hot_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_hot_selected.png; sourceTree = "<group>"; };
+		FCE961C6450B22DD75C7B808 /* RJNewsHdpic2Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsHdpic2Object.m; sourceTree = "<group>"; };
+		FCE961C8E847F6E897C382D2 /* ic_title_has_collected_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_clicked_night.png; sourceTree = "<group>"; };
+		FCE961D5BD4C45F5BDA926B8 /* RJNewsNewsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsList.m; sourceTree = "<group>"; };
+		FCE961DA510871D576B6D673 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		FCE961DB757350A564C4E65A /* RJNewsNewsListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsListObject.h; sourceTree = "<group>"; };
+		FCE961EAC785E6706DA27C76 /* ic_title_repost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost.png; sourceTree = "<group>"; };
+		FCE961F9A350FB107AA4C022 /* ic_title_repost_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_pic_night.png; sourceTree = "<group>"; };
+		FCE961FEE9DBC0856EA206E7 /* RJAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJAppDelegate.h; sourceTree = "<group>"; };
+		FCE9620F8B7D5AB8EDBE5AB1 /* RJNewsTypeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsTypeScrollView.m; sourceTree = "<group>"; };
+		FCE9621D5F7E3BFC33E8BA70 /* RJNewsPictureList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureList.m; sourceTree = "<group>"; };
+		FCE96249FC5FE4EEA773AC09 /* RJNewsNewsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsList.h; sourceTree = "<group>"; };
+		FCE9626A1816E48B2136015E /* CellContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellContext.m; sourceTree = "<group>"; };
+		FCE962703194FA7B17037AC2 /* ic_title_has_liked_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_clicked_night.png; sourceTree = "<group>"; };
+		FCE96273599D2EA524717ECF /* RJNewsTypeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsTypeScrollView.h; sourceTree = "<group>"; };
+		FCE9627882E481B5588EA670 /* MyNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNewsTests.m; sourceTree = "<group>"; };
+		FCE9627E08AAD7F3C7505D5E /* ic_title_back_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_pic_night.png; sourceTree = "<group>"; };
+		FCE962865B3584A755E93780 /* ic_title_repost_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_pic.png; sourceTree = "<group>"; };
+		FCE96286B5A7033A90B3A11C /* RJNewsVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideoData.h; sourceTree = "<group>"; };
+		FCE962882FC4610D67C236C4 /* RJNewsNewsCommentCountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsCommentCountInfo.h; sourceTree = "<group>"; };
+		FCE9628CEB2371C333865C59 /* RJNewsFSList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsFSList.h; sourceTree = "<group>"; };
+		FCE9628FD89A9D8D8501F1A2 /* RJNewsVedioInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVedioInfo.h; sourceTree = "<group>"; };
+		FCE96296A0067EDB54E1ECBE /* RJPictureCellPMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellPMData.m; sourceTree = "<group>"; };
+		FCE962A073FCAB5CA29407F7 /* ic_title_like_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_pic_clicked.png; sourceTree = "<group>"; };
+		FCE962B686268340EEF12145 /* RJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJTabBarController.m; sourceTree = "<group>"; };
+		FCE962BAF207DE98084FD277 /* ic_title_repost_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_pic_clicked.png; sourceTree = "<group>"; };
+		FCE962D4D133F54B2B0F33E7 /* RJPictureCellPMObjectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellPMObjectData.m; sourceTree = "<group>"; };
+		FCE962D81EC37D11BF499716 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCE962FBABBE130B4888EA63 /* RJNewsCellDataVMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVMObject.m; sourceTree = "<group>"; };
+		FCE963131AD1A089F2EA91C5 /* RJNewsPictureListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureListObject.h; sourceTree = "<group>"; };
+		FCE9631705FB29CA2180552F /* RJNewsJsonToPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsJsonToPicture.m; sourceTree = "<group>"; };
+		FCE9631B07A726578F3278E6 /* RJAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJAppDelegate.m; sourceTree = "<group>"; };
+		FCE9635549EC8A756F10F07E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		FCE96364038F262C2F6A723F /* RJNewsPictureListPics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureListPics.m; sourceTree = "<group>"; };
+		FCE96372DAA714F1264E017C /* RJNewsHdpic2Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsHdpic2Object.h; sourceTree = "<group>"; };
+		FCE963B60A705CDABD7326B0 /* RJVideoDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJVideoDownloadController.h; sourceTree = "<group>"; };
+		FCE963CB2F25F9C98B4E04EA /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		FCE963D75BBCD16AFDAD35AB /* RJNewsCellDataVMDataVI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVMDataVI.h; sourceTree = "<group>"; };
+		FCE963DB4FF9975EFBE6C4CE /* CoreStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusProtocol.h; sourceTree = "<group>"; };
+		FCE963F61BEDACB48179FC4B /* RJNewsJsonToPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsJsonToPicture.h; sourceTree = "<group>"; };
+		FCE963F7FF0B94B94B647518 /* RJSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSingleton.h; sourceTree = "<group>"; };
+		FCE96407F5E17912A776D9A7 /* RJNewsPictureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureData.h; sourceTree = "<group>"; };
+		FCE964128191F7FB578B6E56 /* RJFileDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJFileDownloadModel.m; sourceTree = "<group>"; };
+		FCE96414120954AC47B7969B /* HDPICCellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPICCellStrategy.h; sourceTree = "<group>"; };
+		FCE96415C2C9C856F6E156BC /* RJNewsCellDataPicsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataPicsData.m; sourceTree = "<group>"; };
+		FCE9641C52A136182C808A45 /* RJPictureDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureDao.m; sourceTree = "<group>"; };
+		FCE9642DDCFA3DCE00AAE296 /* ic_title_back_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_pic.png; sourceTree = "<group>"; };
+		FCE96452ED282E8810169A40 /* RJPictureCellJsonToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellJsonToModel.m; sourceTree = "<group>"; };
+		FCE9645FB4E5AA79112EB6BD /* channel_video_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_video_selected.png; sourceTree = "<group>"; };
+		FCE964752C1527FD33A27AE1 /* RJNewsJsonToObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsJsonToObject.h; sourceTree = "<group>"; };
+		FCE9648B91C080281F728149 /* CellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellStrategy.m; sourceTree = "<group>"; };
+		FCE9649AD06E59C106424809 /* ic_title_like_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_night.png; sourceTree = "<group>"; };
+		FCE964B325A71C375C85F4F6 /* RJNewsPictureListPicsCCI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureListPicsCCI.m; sourceTree = "<group>"; };
+		FCE964BCB5F790E2FBD87AE7 /* RJNewsNewsListObjectVI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsListObjectVI.m; sourceTree = "<group>"; };
+		FCE964CE5D8F86B21FE8340A /* ic_live_video_play_big_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_live_video_play_big_normal.png; sourceTree = "<group>"; };
+		FCE964D921766A61DA25BB58 /* RJNewsVideoDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideoDataObject.h; sourceTree = "<group>"; };
+		FCE965195FD4C566CF9D1B80 /* RJNewsNewsCommentCountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsCommentCountInfo.m; sourceTree = "<group>"; };
+		FCE96529DDEF98FCD2C9B56E /* RJNewsJsonToNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsJsonToNews.h; sourceTree = "<group>"; };
+		FCE965341E76E8D5003BDAC8 /* RJNewsCellDataKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataKeys.m; sourceTree = "<group>"; };
+		FCE96542A1E23ACD87F39AD1 /* ic_user_guid_change_channel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_guid_change_channel.png; sourceTree = "<group>"; };
+		FCE965590154127A149A73CD /* RJColloectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJColloectModel.m; sourceTree = "<group>"; };
+		FCE9657A44FB1078E913A19B /* RJSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJSettingViewController.m; sourceTree = "<group>"; };
+		FCE965980979D1E2A68196F1 /* ic_title_collect_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_clicked_night.png; sourceTree = "<group>"; };
+		FCE965AD3A43E0FE71754B35 /* RJNewsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsWebViewController.h; sourceTree = "<group>"; };
+		FCE965AD64572A0D9CF3F1EC /* RJNewsVideoListt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideoListt.m; sourceTree = "<group>"; };
+		FCE965BDB711DF9617BC128E /* RJNewsCellDataPicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataPicsObject.h; sourceTree = "<group>"; };
+		FCE966024291A885DC2E146F /* ic_title_like_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_pic.png; sourceTree = "<group>"; };
+		FCE9660990125E3F7BE3D657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCE9662ACA2848541679018C /* CMSCellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSCellStrategy.h; sourceTree = "<group>"; };
+		FCE96638166410A20A3D07E0 /* RJPictureCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellData.m; sourceTree = "<group>"; };
+		FCE9664B2BC172C123D3FFD0 /* ic_title_repost_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_clicked.png; sourceTree = "<group>"; };
+		FCE9664B30C1CA6EEC23FD4B /* RJNewsGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsGroups.m; sourceTree = "<group>"; };
+		FCE96651E6EC3197B5DE23E4 /* ic_title_has_collected_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_pic_clicked.png; sourceTree = "<group>"; };
+		FCE966557B2D02409BC1B4C4 /* RJNewsNewsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsData.m; sourceTree = "<group>"; };
+		FCE9665DD513A3C0F1F28210 /* RJNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsViewController.m; sourceTree = "<group>"; };
+		FCE966816E4D9388586F24AB /* z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = z.png; sourceTree = "<group>"; };
+		FCE9668697811D9233619E28 /* RJNewsNews2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNews2.m; sourceTree = "<group>"; };
+		FCE9668FDACDCB59324647F3 /* RJNewsNewsPicsListObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsPicsListObject.m; sourceTree = "<group>"; };
+		FCE966AEDBB3FF61CE6B1833 /* RJNewsFSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsFSO.m; sourceTree = "<group>"; };
+		FCE966C0978DE0BC0373F88B /* RJPictureCellJsonToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellJsonToModel.h; sourceTree = "<group>"; };
+		FCE966C38A575106EA2BA0C4 /* ic_title_like_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_clicked_night.png; sourceTree = "<group>"; };
+		FCE966CD9BB5BE8812ABFA40 /* ic_title_like_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_clicked.png; sourceTree = "<group>"; };
+		FCE966F60BA85090B795EECB /* RJRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJRequestParam.m; sourceTree = "<group>"; };
+		FCE966F7989198A8DA8E5267 /* RJNewsNewsListObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsListObject.m; sourceTree = "<group>"; };
+		FCE967032D48CBE5C42C4E51 /* ic_title_collect_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_pic_night.png; sourceTree = "<group>"; };
+		FCE96716D8FDE1665FD481BE /* RJCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomCell.m; sourceTree = "<group>"; };
+		FCE9671C3FCE898112F26AB3 /* ic_title_has_collected_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_pic.png; sourceTree = "<group>"; };
+		FCE9673F8BFEF0024237F378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FCE96744F0066DA0CA13C8FD /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		FCE9674C8C75FDA878FC2DDA /* RJNewsVideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideoData.m; sourceTree = "<group>"; };
+		FCE9674DBD8B74B1796F010B /* ic_setting_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_setting_normal.png; sourceTree = "<group>"; };
+		FCE96752A4AFF960263E131B /* ic_title_has_collected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected.png; sourceTree = "<group>"; };
+		FCE9675D96E6EB6E1DC72C23 /* RJNewsNewsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsHelper.m; sourceTree = "<group>"; };
+		FCE9676A9C79AD83FFB46CC9 /* SubjectCellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectCellStrategy.m; sourceTree = "<group>"; };
+		FCE96778BA3B54A8BFB80A97 /* HDPICCellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPICCellStrategy.m; sourceTree = "<group>"; };
+		FCE96782995C12D6082BD1D6 /* RJNewsURLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsURLController.m; sourceTree = "<group>"; };
+		FCE967888AAA66F272B5E585 /* RJNewsCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellData.h; sourceTree = "<group>"; };
+		FCE967BA0E9125B5C5131FC3 /* RJNewsPictureListPicsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureListPicsObject.m; sourceTree = "<group>"; };
+		FCE967C6F3AAD9A86561D0E5 /* RJPictureCellPMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellPMData.h; sourceTree = "<group>"; };
+		FCE967D13D21FF15A910C89D /* RJPictureDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureDao.h; sourceTree = "<group>"; };
+		FCE967D352082AD07C5C00F4 /* RJNewsPictureList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureList.h; sourceTree = "<group>"; };
+		FCE967DBC58F762E140B74F0 /* RJNewsType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsType.m; sourceTree = "<group>"; };
+		FCE967E1072F6B0EF2463DFA /* RJNewsPictureListPicsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureListPicsObject.h; sourceTree = "<group>"; };
+		FCE967F7912658F0DE2C0ECA /* RJNewsJsonToVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsJsonToVideo.m; sourceTree = "<group>"; };
+		FCE967FA24437D01DBE7594F /* RJNewsNewsHeadLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsHeadLines.h; sourceTree = "<group>"; };
+		FCE967FEEA2F9AC5BDDA2FBB /* RJNewsCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellData.m; sourceTree = "<group>"; };
+		FCE96804F789B61C1825E1D1 /* RJNewsPictureListPicsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureListPicsList.h; sourceTree = "<group>"; };
+		FCE9680D4DC58BDC742E6039 /* RJRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJRequestParam.h; sourceTree = "<group>"; };
+		FCE968246E8F6E06A043EBA1 /* channel_hot_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_hot_unselected.png; sourceTree = "<group>"; };
+		FCE968247FF4B520AEDA6527 /* RJNewsVideoListt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideoListt.h; sourceTree = "<group>"; };
+		FCE9682817781C0C36F6CF2F /* RJColloectModelDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJColloectModelDAO.h; sourceTree = "<group>"; };
+		FCE9685591A5F7849765799F /* RJNewsJsonToVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsJsonToVideo.h; sourceTree = "<group>"; };
+		FCE96855D81FC58582E5071D /* VIDEOCellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIDEOCellStrategy.m; sourceTree = "<group>"; };
+		FCE9685AC89C77C539FF9198 /* ic_title_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like.png; sourceTree = "<group>"; };
+		FCE9685E1B1299714086F8E6 /* ic_title_repost_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_night.png; sourceTree = "<group>"; };
+		FCE96870721859F61E0FABA2 /* RJCustomCellHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCustomCellHelper.m; sourceTree = "<group>"; };
+		FCE96873AB9A29B4E94CE8AE /* RJPictureCellPMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellPMObject.h; sourceTree = "<group>"; };
+		FCE9687CF6BA02F3AB02511D /* RJPictureCellPMObjectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellPMObjectData.h; sourceTree = "<group>"; };
+		FCE968A92CE7AFAEB8CE284C /* RJPictureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureDetailController.h; sourceTree = "<group>"; };
+		FCE968C88401BAD268CD1026 /* RJNewsCellDataVMObjectDataVI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVMObjectDataVI.h; sourceTree = "<group>"; };
+		FCE968CAFD94043F13A72C55 /* RJNewsCellDataPicsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataPicsObject.m; sourceTree = "<group>"; };
+		FCE968CB94E7BDACE20F60AA /* ic_user_guid_back_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_guid_back_night.png; sourceTree = "<group>"; };
+		FCE968CBC2E751C399BFE87A /* RJNewsURLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsURLController.h; sourceTree = "<group>"; };
+		FCE968D00151EE27B03BE4A2 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		FCE968DFF66A6397606CBBDF /* ic_title_collect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect.png; sourceTree = "<group>"; };
+		FCE968E599A44EA268E8C405 /* ic_title_more_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_more_pressed.png; sourceTree = "<group>"; };
+		FCE968F60EC0EA4BFF6C1738 /* RJNewsHdpic2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsHdpic2.h; sourceTree = "<group>"; };
+		FCE96902118E1D9CC3CD3248 /* RJNewsNewsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsData.h; sourceTree = "<group>"; };
+		FCE96907C39A1C0F72ADFED0 /* RJPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureViewController.h; sourceTree = "<group>"; };
+		FCE96907DFCF0331FF03A577 /* RJSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJSettingViewController.h; sourceTree = "<group>"; };
+		FCE9690C6041FB7263801EF7 /* RJNewsNewsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsHelper.h; sourceTree = "<group>"; };
+		FCE9691FEB99B27C6F9D9BD3 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		FCE9693943A7E262AF0CC10B /* RJNewsFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsFS.h; sourceTree = "<group>"; };
+		FCE969443E960174B72AA915 /* CoreNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNetworkStatus.h; sourceTree = "<group>"; };
+		FCE969464F198FD10B7ACA13 /* RJFileDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJFileDownloadManager.m; sourceTree = "<group>"; };
+		FCE96953A0180C32180CA119 /* RJNewsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsData.h; sourceTree = "<group>"; };
+		FCE96956D13F5D7C3BADEC25 /* RJPictureCellPMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureCellPMObject.m; sourceTree = "<group>"; };
+		FCE969604F676F10434E95D2 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		FCE9696CE096D8AB9679AD3F /* ic_title_back_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_night.png; sourceTree = "<group>"; };
+		FCE9697F333D522AE626302D /* ic_user_guid_change_channel_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_guid_change_channel_night.png; sourceTree = "<group>"; };
+		FCE969894FF35245625CC0DF /* ic_title_has_liked_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_clicked.png; sourceTree = "<group>"; };
+		FCE9698BAB25755CA5C5A144 /* RJNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsViewController.h; sourceTree = "<group>"; };
+		FCE969A8AA02563659A95EDD /* RJNewsVideoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideoList.m; sourceTree = "<group>"; };
+		FCE969B2E3B53AE580EA8813 /* RJCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomCell.h; sourceTree = "<group>"; };
+		FCE969C2756CAF82ACF7C1AA /* RJNewsNews2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNews2.h; sourceTree = "<group>"; };
+		FCE969C44187B6439A6E78AC /* channel_video_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_video_unselected.png; sourceTree = "<group>"; };
+		FCE969E18E499565D2C90C84 /* RJNewsPictureListObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureListObject.m; sourceTree = "<group>"; };
+		FCE969E36EE021D64B65B032 /* channel_pic_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_pic_unselected.png; sourceTree = "<group>"; };
+		FCE969E6F2F1A4495F851BBC /* RJNewsNewsHeadLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsHeadLines.m; sourceTree = "<group>"; };
+		FCE96A0EB92E769F5D6B3B5A /* ic_title_like_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_pic_night.png; sourceTree = "<group>"; };
+		FCE96A16385D48536CD3CDBF /* RJCustomCellHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCustomCellHelper.h; sourceTree = "<group>"; };
+		FCE96A2B402DC397CF203100 /* RJNewsCellDataVMDataVI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVMDataVI.m; sourceTree = "<group>"; };
+		FCE96A3541E47894CF22CCB5 /* RJNewsVideoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideoList.h; sourceTree = "<group>"; };
+		FCE96A41FA25C77FF2E2C1B3 /* ic_title_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back.png; sourceTree = "<group>"; };
+		FCE96A46258ECD3484692FB8 /* ic_title_back_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_pic_clicked.png; sourceTree = "<group>"; };
+		FCE96A59E357CA7E8952E201 /* RJNewsHdpicList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsHdpicList.h; sourceTree = "<group>"; };
+		FCE96A7A124D186C7DFB80CB /* RJNewsHdpic2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsHdpic2.m; sourceTree = "<group>"; };
+		FCE96A849447CDD072939395 /* URLCellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCellStrategy.m; sourceTree = "<group>"; };
+		FCE96A8BBA49C768C7F75810 /* RJColloectModelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJColloectModelService.m; sourceTree = "<group>"; };
+		FCE96A938C32D8F1C22EE01B /* CMSCellStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSCellStrategy.m; sourceTree = "<group>"; };
+		FCE96A970E841851F610A8C6 /* RJPictureDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureDetailController.m; sourceTree = "<group>"; };
+		FCE96AB0B9BC118EF76A1AFE /* RJNewsPictureListPicsCCI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureListPicsCCI.h; sourceTree = "<group>"; };
+		FCE96AC288B68AF07B281E5E /* ic_title_repost_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96ADA40A11B9BF42CE772 /* ic_title_collect_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_night.png; sourceTree = "<group>"; };
+		FCE96AF68B50680AA2C3EDD0 /* RJFileDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJFileDownloadManager.h; sourceTree = "<group>"; };
+		FCE96B033259064028615091 /* RJNewsCellDataKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataKeys.h; sourceTree = "<group>"; };
+		FCE96B0E8B3606CFAEAE5AA3 /* nonetwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonetwork.png; sourceTree = "<group>"; };
+		FCE96B17FB807DF39AC2FF62 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		FCE96B1A1269240CF1E93016 /* ic_title_collect_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_pic_clicked.png; sourceTree = "<group>"; };
+		FCE96B264471094D57235E1C /* ic_title_collect_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96B2ACAE0BE220D08AD3C /* RJNewsCellJsonToModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellJsonToModel.m; sourceTree = "<group>"; };
+		FCE96B3C0DC3E68E43145805 /* ic_live_event_title_share_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_live_event_title_share_n.png; sourceTree = "<group>"; };
+		FCE96B422502F7DBC4ABFE5E /* RJNewsFSList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsFSList.m; sourceTree = "<group>"; };
+		FCE96B47E51FF93480F455A9 /* ic_title_has_collected_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_night.png; sourceTree = "<group>"; };
+		FCE96B50F9147127A655D8F9 /* RJNewsNewsPics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsPics.h; sourceTree = "<group>"; };
+		FCE96B536BEA3571AD8C8C15 /* RJNewsCellDataVMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVMData.m; sourceTree = "<group>"; };
+		FCE96B75170E76B760CAD0FB /* RJNewsVedioInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVedioInfo.m; sourceTree = "<group>"; };
+		FCE96B79E643785E68142EB8 /* SubjectCellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectCellStrategy.h; sourceTree = "<group>"; };
+		FCE96B7FEB58A81CC96EB992 /* RJNewsCellDataVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVM.h; sourceTree = "<group>"; };
+		FCE96B86E020601FF190E939 /* RJNewsNewsHeadLinesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsHeadLinesObject.h; sourceTree = "<group>"; };
+		FCE96B8BAB82F94640844C06 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		FCE96B929B4DD92243C642A5 /* RJNewsCellDataKeysData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataKeysData.m; sourceTree = "<group>"; };
+		FCE96BA26075FEC517A1F419 /* RJNewsCellDataVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVM.m; sourceTree = "<group>"; };
+		FCE96BA86EA0905FF7B1468A /* RJNewsPictureData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsPictureData.m; sourceTree = "<group>"; };
+		FCE96BA8969A0C498B77A29C /* RJNewsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsType.h; sourceTree = "<group>"; };
+		FCE96BB8C6F68F4F55B5184B /* RJNewsTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsTypeController.h; sourceTree = "<group>"; };
+		FCE96BBBD06F7C9F266B91B1 /* RJFileDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJFileDownloadModel.h; sourceTree = "<group>"; };
+		FCE96BD6DA67C63D96165C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		FCE96BF08D904CA46CC62EC1 /* RJNewsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsData.m; sourceTree = "<group>"; };
+		FCE96C1A78E21BE5C03AD875 /* ic_living_feed_compete_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_living_feed_compete_share.png; sourceTree = "<group>"; };
+		FCE96C2372D5698D30480A42 /* RJNewsCellDataPics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataPics.h; sourceTree = "<group>"; };
+		FCE96C2C28393A5FC41FFA38 /* RJPictureCellPM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellPM.h; sourceTree = "<group>"; };
+		FCE96C419E07721CC408947C /* RJNewsTypeScrollView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RJNewsTypeScrollView.txt; sourceTree = "<group>"; };
+		FCE96C4DD3A75E970ED45AA2 /* RJNewsCellDataPics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataPics.m; sourceTree = "<group>"; };
+		FCE96C4E132D606B961B4B7D /* topimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topimage.png; sourceTree = "<group>"; };
+		FCE96C4F5640343926F90CB2 /* RJNewsTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsTypeController.m; sourceTree = "<group>"; };
+		FCE96C543C9B10DFD1FB46E4 /* ic_title_has_liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked.png; sourceTree = "<group>"; };
+		FCE96C592045B396014447C0 /* ic_title_has_collected_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_pic_night.png; sourceTree = "<group>"; };
+		FCE96C5F1ED42AADC2E5A348 /* RJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJTabBarController.h; sourceTree = "<group>"; };
+		FCE96C7CEC86143BA0FC11AF /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
+		FCE96C8677721E6356DD5DB8 /* RJNewsSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsSingleton.m; sourceTree = "<group>"; };
+		FCE96C90629DA0AEE2FCC4A8 /* ic_title_has_collected_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96C94CC215D2CAB4801E6 /* RJColloectModelDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJColloectModelDAO.m; sourceTree = "<group>"; };
+		FCE96CB77E78229B525EC5A1 /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatus.h; sourceTree = "<group>"; };
+		FCE96CD3DCA9932FBD45A36D /* ic_title_repost_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_repost_clicked_night.png; sourceTree = "<group>"; };
+		FCE96CDE28DF4C953AAE5878 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		FCE96CF1FD0CC0312200A8EA /* ic_title_has_collected_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_collected_clicked.png; sourceTree = "<group>"; };
+		FCE96CFA2725B83B017CB6DD /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		FCE96CFD1E1F537F55F7B25E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FCE96CFF9A0F1708F73B7319 /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
+		FCE96D0CAF8AB68E090E2BD6 /* RJNewsTypeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsTypeButton.h; sourceTree = "<group>"; };
+		FCE96D0F42F5BDF58177E8BF /* RJNewsSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsSingleton.h; sourceTree = "<group>"; };
+		FCE96D419B6CCCE918B6E0AA /* ic_title_back_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_back_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96D58E8B1680BEFF67C12 /* RJNewsCellDataVMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVMData.h; sourceTree = "<group>"; };
+		FCE96D62C787EE8620748FAD /* RJNewsVideo2Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideo2Object.h; sourceTree = "<group>"; };
+		FCE96D6AFB0F22BF8B882616 /* RJNewsNewsHeadLinesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsHeadLinesList.m; sourceTree = "<group>"; };
+		FCE96D8130535B332668564E /* RJNewsVideoDataObjectVI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideoDataObjectVI.h; sourceTree = "<group>"; };
+		FCE96D86669B2291C8E8B5DF /* RJNewsVideo2Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideo2Object.m; sourceTree = "<group>"; };
+		FCE96D871440092C4523FE54 /* CellContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellContext.h; sourceTree = "<group>"; };
+		FCE96DA05AC0F22D7891A0EB /* ic_user_guid_click_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_guid_click_night.png; sourceTree = "<group>"; };
+		FCE96DA1357DC90D69955472 /* ic_title_has_liked_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96DB9A932299BB3C0A558 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		FCE96DBECB2EB4DF746B12EE /* RJNewsVideo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsVideo2.m; sourceTree = "<group>"; };
+		FCE96DE0C0F0450F6D4273EC /* ic_setting_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_setting_selected.png; sourceTree = "<group>"; };
+		FCE96DE3F933833A6CFC949A /* RJVideoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJVideoDetailController.h; sourceTree = "<group>"; };
+		FCE96DEAF25872ABEA47FD89 /* MyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE96E0FA5048422CC901796 /* ic_title_has_liked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_night.png; sourceTree = "<group>"; };
+		FCE96E37DD7183731C3FF755 /* RJNewsCellDataPicsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataPicsData.h; sourceTree = "<group>"; };
+		FCE96E5415F99B1380060774 /* ic_title_more_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_more_night.png; sourceTree = "<group>"; };
+		FCE96E68EEB46AE62D03A226 /* ic_user_guid_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_guid_back.png; sourceTree = "<group>"; };
+		FCE96E6D441BDC748FD0BFA3 /* RJVideoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJVideoDetailController.m; sourceTree = "<group>"; };
+		FCE96E70717DF49D6AB830D8 /* ic_title_has_liked_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_pic.png; sourceTree = "<group>"; };
+		FCE96E70B261541632E25045 /* RJPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJPictureViewController.m; sourceTree = "<group>"; };
+		FCE96E726ABADBF75E476C86 /* RJNewsVideo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsVideo2.h; sourceTree = "<group>"; };
+		FCE96E79B8DC14D0D1651DFA /* RJNewsPictureListPics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsPictureListPics.h; sourceTree = "<group>"; };
+		FCE96E875011F97A765C422B /* RJNewsCellDataVMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVMObject.h; sourceTree = "<group>"; };
+		FCE96E8D460EC6778E50FA02 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FCE96EACB846B20A370ED599 /* ic_title_collect_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_clicked.png; sourceTree = "<group>"; };
+		FCE96EADCC9B5B7796832F96 /* RJNewsCellDataKeysData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataKeysData.h; sourceTree = "<group>"; };
+		FCE96EB781C06B829D31A793 /* RJNewsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsWebViewController.m; sourceTree = "<group>"; };
+		FCE96EC774963933B15F6775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		FCE96ED8B6E6B25649A24D87 /* VIDEOCellStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIDEOCellStrategy.h; sourceTree = "<group>"; };
+		FCE96EDBA6126EEC560E4D71 /* RJNewsJsonToObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsJsonToObject.m; sourceTree = "<group>"; };
+		FCE96EDE20F10952ADC6BEEC /* channel_pic_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = channel_pic_selected.png; sourceTree = "<group>"; };
+		FCE96EEF5C65348BA53E2E39 /* ic_title_like_pic_clicked_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_like_pic_clicked_night.png; sourceTree = "<group>"; };
+		FCE96F0265730F8707F2A3EF /* ic_title_has_liked_pic_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_pic_night.png; sourceTree = "<group>"; };
+		FCE96F39C877A60A699ED23E /* RJNewsNewsHeadLinesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsHeadLinesObject.m; sourceTree = "<group>"; };
+		FCE96F448D8A4226E4026E40 /* RJPictureCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJPictureCellData.h; sourceTree = "<group>"; };
+		FCE96F530B679498FB05644D /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		FCE96F5C1CE0532356F8C4A6 /* RJNewsNewsPicsListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsNewsPicsListObject.h; sourceTree = "<group>"; };
+		FCE96F649D0DE5932E8B7BBC /* RJNewsFSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsFSO.h; sourceTree = "<group>"; };
+		FCE96F6A3425DA5D11110FBE /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
+		FCE96F6BFFD0842F3A09C269 /* MyNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE96F6F237E89F66BB1894F /* RJNewsCellJsonToModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellJsonToModel.h; sourceTree = "<group>"; };
+		FCE96F73A37F3F4C0087B81D /* RJNewsNewsPicsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNewsPicsList.m; sourceTree = "<group>"; };
+		FCE96F8EAFE35A5991FCF132 /* RJNewsCellDataVMObjectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewsCellDataVMObjectData.h; sourceTree = "<group>"; };
+		FCE96FB03CB75FA86F3459CF /* RJNewsCellDataVMObjectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsCellDataVMObjectData.m; sourceTree = "<group>"; };
+		FCE96FCED9C934C5FEA1EC69 /* RJNewsNews2Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewsNews2Object.m; sourceTree = "<group>"; };
+		FCE96FD5B9864B8CCDEF6680 /* ic_title_has_liked_pic_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_has_liked_pic_clicked.png; sourceTree = "<group>"; };
+		FCE96FDADF8BB643E75ED17A /* RJVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJVideoViewController.h; sourceTree = "<group>"; };
+		FCE96FDC542FC85788015DCD /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		FCE96FEE7C33714AA6CD2DA9 /* ic_title_collect_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_title_collect_pic.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCE966C1F00B76EAFFCE7DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE96B1DA59D7ED0A011547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64CE70CD7C26FFD87FA076B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EE6D24BC9C32EE6E75D99EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2D233556FDC79AE6279A47D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E090D4F54E2AB218F5170F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D171A720EAE693A03B672EC /* Pods.debug.xcconfig */,
+				EE3D6F9EEEA84B2651D3AE43 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCE9601F01A0076ADAA9D5BD /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				FCE969604F676F10434E95D2 /* TADotView.h */,
+				FCE968D00151EE27B03BE4A2 /* TADotView.m */,
+				FCE96744F0066DA0CA13C8FD /* TAPageControl.h */,
+				FCE960705005390109BEAF99 /* TAPageControl.m */,
+				FCE9691FEB99B27C6F9D9BD3 /* TAAbstractDotView.h */,
+				FCE9604C51FC954ACDA31E92 /* TAAbstractDotView.m */,
+				FCE9635549EC8A756F10F07E /* TAAnimatedDotView.h */,
+				FCE96FDC542FC85788015DCD /* TAAnimatedDotView.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		FCE9605741CDABDED268B4A3 /* PictureCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96407F5E17912A776D9A7 /* RJNewsPictureData.h */,
+				FCE96BA86EA0905FF7B1468A /* RJNewsPictureData.m */,
+				FCE967D352082AD07C5C00F4 /* RJNewsPictureList.h */,
+				FCE9621D5F7E3BFC33E8BA70 /* RJNewsPictureList.m */,
+				FCE963F61BEDACB48179FC4B /* RJNewsJsonToPicture.h */,
+				FCE9631705FB29CA2180552F /* RJNewsJsonToPicture.m */,
+				FCE96E79B8DC14D0D1651DFA /* RJNewsPictureListPics.h */,
+				FCE96364038F262C2F6A723F /* RJNewsPictureListPics.m */,
+				FCE963131AD1A089F2EA91C5 /* RJNewsPictureListObject.h */,
+				FCE969E18E499565D2C90C84 /* RJNewsPictureListObject.m */,
+				FCE96AB0B9BC118EF76A1AFE /* RJNewsPictureListPicsCCI.h */,
+				FCE964B325A71C375C85F4F6 /* RJNewsPictureListPicsCCI.m */,
+				FCE96804F789B61C1825E1D1 /* RJNewsPictureListPicsList.h */,
+				FCE9609E9B5ACA154E9C2407 /* RJNewsPictureListPicsList.m */,
+				FCE967E1072F6B0EF2463DFA /* RJNewsPictureListPicsObject.h */,
+				FCE967BA0E9125B5C5131FC3 /* RJNewsPictureListPicsObject.m */,
+			);
+			path = PictureCell;
+			sourceTree = "<group>";
+		};
+		FCE960925DBA12D9F84196FE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96E8D460EC6778E50FA02 /* Reachability.h */,
+				FCE96CFD1E1F537F55F7B25E /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		FCE960AD3A646122DA9D8AF6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FCE968991E04AFA2EA69ECCF /* Controller */,
+				FCE9668B376930CEBF9D8D82 /* Macro */,
+				FCE969869087E7AB73E8BAAF /* View */,
+				FCE96CB26701757DFE198599 /* Model */,
+				FCE960E4674BD4A6D3BA5B91 /* Strategy */,
+				FCE966C67FF0F4DA42575D4F /* Collection */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FCE960E4674BD4A6D3BA5B91 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96D871440092C4523FE54 /* CellContext.h */,
+				FCE9626A1816E48B2136015E /* CellContext.m */,
+				FCE9613B6FCD9E9CD6FCBC4A /* CellStrategy.h */,
+				FCE9648B91C080281F728149 /* CellStrategy.m */,
+				FCE9662ACA2848541679018C /* CMSCellStrategy.h */,
+				FCE96A938C32D8F1C22EE01B /* CMSCellStrategy.m */,
+				FCE961078D7FB7A8291DBB54 /* URLCellStrategy.h */,
+				FCE96A849447CDD072939395 /* URLCellStrategy.m */,
+				FCE96414120954AC47B7969B /* HDPICCellStrategy.h */,
+				FCE96778BA3B54A8BFB80A97 /* HDPICCellStrategy.m */,
+				FCE96ED8B6E6B25649A24D87 /* VIDEOCellStrategy.h */,
+				FCE96855D81FC58582E5071D /* VIDEOCellStrategy.m */,
+				FCE96B79E643785E68142EB8 /* SubjectCellStrategy.h */,
+				FCE9676A9C79AD83FFB46CC9 /* SubjectCellStrategy.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		FCE9615E278D7EE02C8AFB74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34BE472E1B9BF83700CDF470 /* RJPictureDetailView.xib */,
+				34BE47301B9BFD5100CDF470 /* RJPictureDetailView.h */,
+				34BE47311B9BFD5100CDF470 /* RJPictureDetailView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE961B9565DB1BE2B1C0DAC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FCE960925DBA12D9F84196FE /* Reachability */,
+				FCE962ECC96934E5F97F4819 /* SDCycleScrollView */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		FCE962C2D110329E25DF5D20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9605741CDABDED268B4A3 /* PictureCell */,
+				FCE966C297298564B3A5FA8C /* PictureDetail */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE962D7D2C02C384CF9EFFD /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9641C52A136182C808A45 /* RJPictureDao.m */,
+				FCE967D13D21FF15A910C89D /* RJPictureDao.h */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		FCE962ECC96934E5F97F4819 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9601F01A0076ADAA9D5BD /* PageControl */,
+				FCE961DA510871D576B6D673 /* SDCycleScrollView.h */,
+				FCE96B8BAB82F94640844C06 /* SDCycleScrollView.m */,
+				FCE96F6A3425DA5D11110FBE /* NSData+SDDataCache.h */,
+				FCE96CFF9A0F1708F73B7319 /* NSData+SDDataCache.m */,
+				FCE96B17FB807DF39AC2FF62 /* UIView+SDExtension.h */,
+				FCE96DB9A932299BB3C0A558 /* UIView+SDExtension.m */,
+				FCE963CB2F25F9C98B4E04EA /* SDCollectionViewCell.h */,
+				FCE96CDE28DF4C953AAE5878 /* SDCollectionViewCell.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		FCE96343A6186EE5E516D2E7 /* MyNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCE968611165FFD1ED33415B /* Supporting Files */,
+				FCE9627882E481B5588EA670 /* MyNewsTests.m */,
+			);
+			path = MyNewsTests;
+			sourceTree = "<group>";
+		};
+		FCE963731F25D3A800DACBBC /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				FCE963F7FF0B94B94B647518 /* RJSingleton.h */,
+				FCE96C8677721E6356DD5DB8 /* RJNewsSingleton.m */,
+				FCE96D0F42F5BDF58177E8BF /* RJNewsSingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		FCE9638C322B64010679833D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCE968243649536236414E73 /* Helper */,
+				FCE96C9106EC4AF341D2747C /* Extend */,
+				FCE963731F25D3A800DACBBC /* Singleton */,
+				FCE965636D05FF93906B8649 /* AppDelegate */,
+				FCE960AD3A646122DA9D8AF6 /* Main */,
+				FCE96EB80DBE5DC1589A7436 /* Sections */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FCE963B256E454BD1F6A81B1 /* RJNewsType */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96091C22A01A5A281F302 /* RJNewsNews2Object.h */,
+				FCE96091D54EC47C5E6BFD44 /* RJNewsHdpicList.m */,
+				FCE96F649D0DE5932E8B7BBC /* RJNewsFSO.h */,
+				FCE967FA24437D01DBE7594F /* RJNewsNewsHeadLines.h */,
+				FCE9618E683B97EB10F52C94 /* RJNewsNewsHeadLinesList.h */,
+				FCE9664B30C1CA6EEC23FD4B /* RJNewsGroups.m */,
+				FCE969E6F2F1A4495F851BBC /* RJNewsNewsHeadLines.m */,
+				FCE96372DAA714F1264E017C /* RJNewsHdpic2Object.h */,
+				FCE961A758D9D6038D9D1260 /* RJNewsFS.m */,
+				FCE96D86669B2291C8E8B5DF /* RJNewsVideo2Object.m */,
+				FCE9668697811D9233619E28 /* RJNewsNews2.m */,
+				FCE96D62C787EE8620748FAD /* RJNewsVideo2Object.h */,
+				FCE969C2756CAF82ACF7C1AA /* RJNewsNews2.h */,
+				FCE961C6450B22DD75C7B808 /* RJNewsHdpic2Object.m */,
+				FCE964752C1527FD33A27AE1 /* RJNewsJsonToObject.h */,
+				FCE966AEDBB3FF61CE6B1833 /* RJNewsFSO.m */,
+				FCE96BF08D904CA46CC62EC1 /* RJNewsData.m */,
+				FCE96EDBA6126EEC560E4D71 /* RJNewsJsonToObject.m */,
+				FCE969A8AA02563659A95EDD /* RJNewsVideoList.m */,
+				FCE96D6AFB0F22BF8B882616 /* RJNewsNewsHeadLinesList.m */,
+				FCE967DBC58F762E140B74F0 /* RJNewsType.m */,
+				FCE9628CEB2371C333865C59 /* RJNewsFSList.h */,
+				FCE96B422502F7DBC4ABFE5E /* RJNewsFSList.m */,
+				FCE968F60EC0EA4BFF6C1738 /* RJNewsHdpic2.h */,
+				FCE96F39C877A60A699ED23E /* RJNewsNewsHeadLinesObject.m */,
+				FCE9693943A7E262AF0CC10B /* RJNewsFS.h */,
+				FCE96E726ABADBF75E476C86 /* RJNewsVideo2.h */,
+				FCE96BA8969A0C498B77A29C /* RJNewsType.h */,
+				FCE96B86E020601FF190E939 /* RJNewsNewsHeadLinesObject.h */,
+				FCE96FCED9C934C5FEA1EC69 /* RJNewsNews2Object.m */,
+				FCE96A7A124D186C7DFB80CB /* RJNewsHdpic2.m */,
+				FCE96953A0180C32180CA119 /* RJNewsData.h */,
+				FCE96A3541E47894CF22CCB5 /* RJNewsVideoList.h */,
+				FCE96DBECB2EB4DF746B12EE /* RJNewsVideo2.m */,
+				FCE9605E85E235721186448C /* RJNewsGroups.h */,
+				FCE96A59E357CA7E8952E201 /* RJNewsHdpicList.h */,
+			);
+			path = RJNewsType;
+			sourceTree = "<group>";
+		};
+		FCE963C497170C0375F5F51B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96A8BBA49C768C7F75810 /* RJColloectModelService.m */,
+				FCE960616EBC866421D786A1 /* RJColloectModelService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FCE963DE1E317EDC60B21319 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9665DD513A3C0F1F28210 /* RJNewsViewController.m */,
+				FCE9698BAB25755CA5C5A144 /* RJNewsViewController.h */,
+				FCE96EB781C06B829D31A793 /* RJNewsWebViewController.m */,
+				FCE965AD3A43E0FE71754B35 /* RJNewsWebViewController.h */,
+				FCE96782995C12D6082BD1D6 /* RJNewsURLController.m */,
+				FCE968CBC2E751C399BFE87A /* RJNewsURLController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCE963DF8DA3D3231D8DFFA9 /* MyNews */ = {
+			isa = PBXGroup;
+			children = (
+				34890A2F1B9092F30035DCFC /* RJCustomHDPIC.xib */,
+				FCE96F9E957EAD4F957F3773 /* Supporting Files */,
+				FCE962D81EC37D11BF499716 /* Images.xcassets */,
+				FCE96BE5DA1772E92D301A71 /* LaunchScreen.xib */,
+				FCE96ADDEAAE11921A067119 /* Main.storyboard */,
+				FCE9638C322B64010679833D /* Classes */,
+				FCE96E85D6C00D5C49BFBD03 /* Resource */,
+			);
+			path = MyNews;
+			sourceTree = "<group>";
+		};
+		FCE964908EEA748E1BB02B41 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FCE967D39F6A459C4B325AF2 /* Controller */,
+				FCE96BBB569A67C2ACC4917A /* View */,
+				FCE9652F505A56ADE90BF8CA /* Model */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		FCE9652F505A56ADE90BF8CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9628FD89A9D8D8501F1A2 /* RJNewsVedioInfo.h */,
+				FCE96B75170E76B760CAD0FB /* RJNewsVedioInfo.m */,
+				FCE96286B5A7033A90B3A11C /* RJNewsVideoData.h */,
+				FCE9674C8C75FDA878FC2DDA /* RJNewsVideoData.m */,
+				FCE968247FF4B520AEDA6527 /* RJNewsVideoListt.h */,
+				FCE965AD64572A0D9CF3F1EC /* RJNewsVideoListt.m */,
+				FCE9685591A5F7849765799F /* RJNewsJsonToVideo.h */,
+				FCE967F7912658F0DE2C0ECA /* RJNewsJsonToVideo.m */,
+				FCE964D921766A61DA25BB58 /* RJNewsVideoDataObject.h */,
+				FCE9605191A2EC4D5E6D7DC4 /* RJNewsVideoDataObject.m */,
+				FCE96D8130535B332668564E /* RJNewsVideoDataObjectVI.h */,
+				FCE96132C3D7F6D5DB991A66 /* RJNewsVideoDataObjectVI.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE965636D05FF93906B8649 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FCE961FEE9DBC0856EA206E7 /* RJAppDelegate.h */,
+				FCE9631B07A726578F3278E6 /* RJAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FCE9660D599D32904500DD3D /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				FCE969464F198FD10B7ACA13 /* RJFileDownloadManager.m */,
+				FCE96AF68B50680AA2C3EDD0 /* RJFileDownloadManager.h */,
+				FCE964128191F7FB578B6E56 /* RJFileDownloadModel.m */,
+				FCE96BBBD06F7C9F266B91B1 /* RJFileDownloadModel.h */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		FCE9668B376930CEBF9D8D82 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9619A2321E888086A42FB /* RJNews.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		FCE966C297298564B3A5FA8C /* PictureDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96C2C28393A5FC41FFA38 /* RJPictureCellPM.h */,
+				FCE960FCA2F88223FB5A2F5A /* RJPictureCellPM.m */,
+				FCE96F448D8A4226E4026E40 /* RJPictureCellData.h */,
+				FCE96638166410A20A3D07E0 /* RJPictureCellData.m */,
+				FCE967C6F3AAD9A86561D0E5 /* RJPictureCellPMData.h */,
+				FCE96296A0067EDB54E1ECBE /* RJPictureCellPMData.m */,
+				FCE96873AB9A29B4E94CE8AE /* RJPictureCellPMObject.h */,
+				FCE96956D13F5D7C3BADEC25 /* RJPictureCellPMObject.m */,
+				FCE966C0978DE0BC0373F88B /* RJPictureCellJsonToModel.h */,
+				FCE96452ED282E8810169A40 /* RJPictureCellJsonToModel.m */,
+				FCE9687CF6BA02F3AB02511D /* RJPictureCellPMObjectData.h */,
+				FCE962D4D133F54B2B0F33E7 /* RJPictureCellPMObjectData.m */,
+			);
+			path = PictureDetail;
+			sourceTree = "<group>";
+		};
+		FCE966C67FF0F4DA42575D4F /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				FCE963C497170C0375F5F51B /* Service */,
+				FCE96D5DDE7A4CD7A35DD138 /* Model */,
+				FCE96E775B71CE640BB8C352 /* Dao */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		FCE966F89336CD30AD8BC0EF /* CoreStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96C7CEC86143BA0FC11AF /* CoreStatus.m */,
+				FCE963DB4FF9975EFBE6C4CE /* CoreStatusProtocol.h */,
+				FCE96CB77E78229B525EC5A1 /* CoreStatus.h */,
+				FCE969443E960174B72AA915 /* CoreNetworkStatus.h */,
+			);
+			path = CoreStatus;
+			sourceTree = "<group>";
+		};
+		FCE967D39F6A459C4B325AF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96FDADF8BB643E75ED17A /* RJVideoViewController.h */,
+				FCE96144623AAB0C35780692 /* RJVideoViewController.m */,
+				FCE9605B265D8A0E2B2D9466 /* RJVideoDownloadController.m */,
+				FCE963B60A705CDABD7326B0 /* RJVideoDownloadController.h */,
+				FCE96E6D441BDC748FD0BFA3 /* RJVideoDetailController.m */,
+				FCE96DE3F933833A6CFC949A /* RJVideoDetailController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCE968243649536236414E73 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FCE960A856AC3D55783843B6 /* RJNewsHttpHelper.h */,
+				FCE9690C6041FB7263801EF7 /* RJNewsNewsHelper.h */,
+				FCE960BDE9C91C0E5CC964AD /* RJNewsHttpHelper.m */,
+				FCE9675D96E6EB6E1DC72C23 /* RJNewsNewsHelper.m */,
+				FCE96870721859F61E0FABA2 /* RJCustomCellHelper.m */,
+				FCE96A16385D48536CD3CDBF /* RJCustomCellHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FCE96831B51579201581C0EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96F5688D4B2E589C21998 /* CellModel */,
+				FCE969AE1C403AC4B762F5B1 /* Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE968611165FFD1ED33415B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96BD6DA67C63D96165C66 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCE968760F29B10ABB2E0603 /* RequestParam */ = {
+			isa = PBXGroup;
+			children = (
+				FCE966F60BA85090B795EECB /* RJRequestParam.m */,
+				FCE9680D4DC58BDC742E6039 /* RJRequestParam.h */,
+			);
+			path = RequestParam;
+			sourceTree = "<group>";
+		};
+		FCE968991E04AFA2EA69ECCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96C5F1ED42AADC2E5A348 /* RJTabBarController.h */,
+				FCE962B686268340EEF12145 /* RJTabBarController.m */,
+				FCE96C4F5640343926F90CB2 /* RJNewsTypeController.m */,
+				FCE96BB8C6F68F4F55B5184B /* RJNewsTypeController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCE968B9D479D1E0193A1153 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				FCE962C2D110329E25DF5D20 /* Model */,
+				FCE96EB9A3E5E1A7908701AE /* Controller */,
+				FCE9615E278D7EE02C8AFB74 /* View */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		FCE9690E9C9009EC67B3C5FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FCE961A5A2D6B5640A9D5D9E /* f.png */,
+				FCE966816E4D9388586F24AB /* z.png */,
+				FCE96C4E132D606B961B4B7D /* topimage.png */,
+				FCE96B0E8B3606CFAEAE5AA3 /* nonetwork.png */,
+				FCE9674DBD8B74B1796F010B /* ic_setting_normal.png */,
+				FCE96DE0C0F0450F6D4273EC /* ic_setting_selected.png */,
+				FCE961C44FFED62F84A03DC6 /* channel_hot_selected.png */,
+				FCE96EDE20F10952ADC6BEEC /* channel_pic_selected.png */,
+				FCE968246E8F6E06A043EBA1 /* channel_hot_unselected.png */,
+				FCE969E36EE021D64B65B032 /* channel_pic_unselected.png */,
+				FCE9645FB4E5AA79112EB6BD /* channel_video_selected.png */,
+				FCE969C44187B6439A6E78AC /* channel_video_unselected.png */,
+				FCE9604E07DC07877D392638 /* ic_download_picture_normal.png */,
+				FCE9603E687EE14CC769CB8D /* ic_live_event_title_back_n.png */,
+				FCE96B3C0DC3E68E43145805 /* ic_live_event_title_share_n.png */,
+				FCE96C1A78E21BE5C03AD875 /* ic_living_feed_compete_share.png */,
+				FCE964CE5D8F86B21FE8340A /* ic_live_video_play_big_normal.png */,
+				FCE9697F333D522AE626302D /* ic_user_guid_change_channel_night.png */,
+				FCE96DA05AC0F22D7891A0EB /* ic_user_guid_click_night.png */,
+				FCE9671C3FCE898112F26AB3 /* ic_title_has_collected_pic.png */,
+				FCE96CF1FD0CC0312200A8EA /* ic_title_has_collected_clicked.png */,
+				FCE966C38A575106EA2BA0C4 /* ic_title_like_clicked_night.png */,
+				FCE96752A4AFF960263E131B /* ic_title_has_collected.png */,
+				FCE96B47E51FF93480F455A9 /* ic_title_has_collected_night.png */,
+				FCE968DFF66A6397606CBBDF /* ic_title_collect.png */,
+				FCE96B1A1269240CF1E93016 /* ic_title_collect_pic_clicked.png */,
+				FCE961EAC785E6706DA27C76 /* ic_title_repost.png */,
+				FCE96651E6EC3197B5DE23E4 /* ic_title_has_collected_pic_clicked.png */,
+				FCE961A4C54DBD913D2C6A2D /* ic_title_more.png */,
+				FCE967032D48CBE5C42C4E51 /* ic_title_collect_pic_night.png */,
+				FCE9627E08AAD7F3C7505D5E /* ic_title_back_pic_night.png */,
+				FCE9685AC89C77C539FF9198 /* ic_title_like.png */,
+				FCE96A41FA25C77FF2E2C1B3 /* ic_title_back.png */,
+				FCE9642DDCFA3DCE00AAE296 /* ic_title_back_pic.png */,
+				FCE9685E1B1299714086F8E6 /* ic_title_repost_night.png */,
+				FCE9649AD06E59C106424809 /* ic_title_like_night.png */,
+				FCE9696CE096D8AB9679AD3F /* ic_title_back_night.png */,
+				FCE968CB94E7BDACE20F60AA /* ic_user_guid_back_night.png */,
+				FCE96EEF5C65348BA53E2E39 /* ic_title_like_pic_clicked_night.png */,
+				FCE96AC288B68AF07B281E5E /* ic_title_repost_pic_clicked_night.png */,
+				FCE96E68EEB46AE62D03A226 /* ic_user_guid_back.png */,
+				FCE961C8E847F6E897C382D2 /* ic_title_has_collected_clicked_night.png */,
+				FCE96C543C9B10DFD1FB46E4 /* ic_title_has_liked.png */,
+				FCE96DA1357DC90D69955472 /* ic_title_has_liked_pic_clicked_night.png */,
+				FCE962BAF207DE98084FD277 /* ic_title_repost_pic_clicked.png */,
+				FCE96F0265730F8707F2A3EF /* ic_title_has_liked_pic_night.png */,
+				FCE96A0EB92E769F5D6B3B5A /* ic_title_like_pic_night.png */,
+				FCE96CD3DCA9932FBD45A36D /* ic_title_repost_clicked_night.png */,
+				FCE96B264471094D57235E1C /* ic_title_collect_pic_clicked_night.png */,
+				FCE962703194FA7B17037AC2 /* ic_title_has_liked_clicked_night.png */,
+				FCE962865B3584A755E93780 /* ic_title_repost_pic.png */,
+				FCE968E599A44EA268E8C405 /* ic_title_more_pressed.png */,
+				FCE96ADA40A11B9BF42CE772 /* ic_title_collect_night.png */,
+				FCE969894FF35245625CC0DF /* ic_title_has_liked_clicked.png */,
+				FCE966CD9BB5BE8812ABFA40 /* ic_title_like_clicked.png */,
+				FCE96C592045B396014447C0 /* ic_title_has_collected_pic_night.png */,
+				FCE96A46258ECD3484692FB8 /* ic_title_back_pic_clicked.png */,
+				FCE96FEE7C33714AA6CD2DA9 /* ic_title_collect_pic.png */,
+				FCE96C90629DA0AEE2FCC4A8 /* ic_title_has_collected_pic_clicked_night.png */,
+				FCE9664B2BC172C123D3FFD0 /* ic_title_repost_clicked.png */,
+				FCE96EACB846B20A370ED599 /* ic_title_collect_clicked.png */,
+				FCE966024291A885DC2E146F /* ic_title_like_pic.png */,
+				FCE96E70717DF49D6AB830D8 /* ic_title_has_liked_pic.png */,
+				FCE96E0FA5048422CC901796 /* ic_title_has_liked_night.png */,
+				FCE96FD5B9864B8CCDEF6680 /* ic_title_has_liked_pic_clicked.png */,
+				FCE9617B1F37E2B366FC70AF /* ic_title_more_pressed_night.png */,
+				FCE961F9A350FB107AA4C022 /* ic_title_repost_pic_night.png */,
+				FCE96542A1E23ACD87F39AD1 /* ic_user_guid_change_channel.png */,
+				FCE96D419B6CCCE918B6E0AA /* ic_title_back_pic_clicked_night.png */,
+				FCE96E5415F99B1380060774 /* ic_title_more_night.png */,
+				FCE9607880474F8512B7554E /* ic_title_back_clicked.png */,
+				FCE965980979D1E2A68196F1 /* ic_title_collect_clicked_night.png */,
+				FCE962A073FCAB5CA29407F7 /* ic_title_like_pic_clicked.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FCE969869087E7AB73E8BAAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9620F8B7D5AB8EDBE5AB1 /* RJNewsTypeScrollView.m */,
+				FCE96273599D2EA524717ECF /* RJNewsTypeScrollView.h */,
+				FCE96D0CAF8AB68E090E2BD6 /* RJNewsTypeButton.h */,
+				FCE96125FA1491F7D9FDD1EC /* RJNewsTypeButton.m */,
+				FCE96C419E07721CC408947C /* RJNewsTypeScrollView.txt */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE96992B3EF5DDCDB213244 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FCE963DE1E317EDC60B21319 /* Controller */,
+				FCE96831B51579201581C0EF /* Model */,
+				FCE9699560DA2873BD4530CB /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		FCE9699560DA2873BD4530CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34B499821B9313A400422396 /* RJCustomHDPIC.xib */,
+				34890A271B9060040035DCFC /* RJCustomCMS.xib */,
+				34890A291B9060FA0035DCFC /* RJCustomCMSCell.h */,
+				34890A2A1B9060FA0035DCFC /* RJCustomCMSCell.m */,
+				34890A2C1B9092C60035DCFC /* RJCustomHDPICCell.h */,
+				34890A2D1B9092C60035DCFC /* RJCustomHDPICCell.m */,
+				34890A311B90A0610035DCFC /* RJCustomVIDEOCell.h */,
+				34890A321B90A0610035DCFC /* RJCustomVIDEOCell.m */,
+				34890A341B90A0780035DCFC /* RJCustomVIDEO.xib */,
+				34890A361B90A7600035DCFC /* RJCustomURL.xib */,
+				34890A381B90A7750035DCFC /* RJCustomURLCell.h */,
+				34890A391B90A7750035DCFC /* RJCustomURLCell.m */,
+				FCE969B2E3B53AE580EA8813 /* RJCustomCell.h */,
+				FCE96716D8FDE1665FD481BE /* RJCustomCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE969AE1C403AC4B762F5B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96902118E1D9CC3CD3248 /* RJNewsNewsData.h */,
+				FCE966557B2D02409BC1B4C4 /* RJNewsNewsData.m */,
+				FCE96249FC5FE4EEA773AC09 /* RJNewsNewsList.h */,
+				FCE961D5BD4C45F5BDA926B8 /* RJNewsNewsList.m */,
+				FCE96B50F9147127A655D8F9 /* RJNewsNewsPics.h */,
+				FCE961A8EEB8A6D54BFE95C6 /* RJNewsNewsPics.m */,
+				FCE96529DDEF98FCD2C9B56E /* RJNewsJsonToNews.h */,
+				FCE960AC8C7CA38A16AD5563 /* RJNewsJsonToNews.m */,
+				FCE96113302C667D493A571D /* RJNewsNewsPicsList.h */,
+				FCE96F73A37F3F4C0087B81D /* RJNewsNewsPicsList.m */,
+				FCE961DB757350A564C4E65A /* RJNewsNewsListObject.h */,
+				FCE966F7989198A8DA8E5267 /* RJNewsNewsListObject.m */,
+				FCE9606D2F711FA85D9A2E55 /* RJNewsNewsListObjectVI.h */,
+				FCE964BCB5F790E2FBD87AE7 /* RJNewsNewsListObjectVI.m */,
+				FCE96F5C1CE0532356F8C4A6 /* RJNewsNewsPicsListObject.h */,
+				FCE9668FDACDCB59324647F3 /* RJNewsNewsPicsListObject.m */,
+				FCE962882FC4610D67C236C4 /* RJNewsNewsCommentCountInfo.h */,
+				FCE965195FD4C566CF9D1B80 /* RJNewsNewsCommentCountInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCE969F1BE36CC953D2E765C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96DEAF25872ABEA47FD89 /* MyNews.app */,
+				FCE96F6BFFD0842F3A09C269 /* MyNewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE96AC9CA631F94C3235CBD /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9657A44FB1078E913A19B /* RJSettingViewController.m */,
+				FCE96907DFCF0331FF03A577 /* RJSettingViewController.h */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FCE96BBB569A67C2ACC4917A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE96BFD527BE788B4B00441 = {
+			isa = PBXGroup;
+			children = (
+				FCE969F1BE36CC953D2E765C /* Products */,
+				FCE963DF8DA3D3231D8DFFA9 /* MyNews */,
+				FCE96343A6186EE5E516D2E7 /* MyNewsTests */,
+				E090D4F54E2AB218F5170F63 /* Pods */,
+				9EE6D24BC9C32EE6E75D99EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCE96C9106EC4AF341D2747C /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				FCE961B9565DB1BE2B1C0DAC /* Libs */,
+				FCE966F89336CD30AD8BC0EF /* CoreStatus */,
+				FCE9660D599D32904500DD3D /* Download */,
+				FCE96E9EDD02108930E17D1C /* MBProgressHUD */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		FCE96CB26701757DFE198599 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE968760F29B10ABB2E0603 /* RequestParam */,
+				FCE963B256E454BD1F6A81B1 /* RJNewsType */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE96D5DDE7A4CD7A35DD138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE965590154127A149A73CD /* RJColloectModel.m */,
+				FCE96038B1EDE95A42E583CC /* RJColloectModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE96E775B71CE640BB8C352 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96C94CC215D2CAB4801E6 /* RJColloectModelDAO.m */,
+				FCE9682817781C0C36F6CF2F /* RJColloectModelDAO.h */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		FCE96E85D6C00D5C49BFBD03 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9690E9C9009EC67B3C5FA /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FCE96E9EDD02108930E17D1C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96F530B679498FB05644D /* MBProgressHUD+MJ.m */,
+				FCE96CFA2725B83B017CB6DD /* MBProgressHUD+MJ.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FCE96EB80DBE5DC1589A7436 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96992B3EF5DDCDB213244 /* News */,
+				FCE964908EEA748E1BB02B41 /* Video */,
+				FCE96AC9CA631F94C3235CBD /* Setting */,
+				FCE968B9D479D1E0193A1153 /* Picture */,
+				FCE962D7D2C02C384CF9EFFD /* Dao */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		FCE96EB9A3E5E1A7908701AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96E70B261541632E25045 /* RJPictureViewController.m */,
+				FCE96907C39A1C0F72ADFED0 /* RJPictureViewController.h */,
+				FCE96A970E841851F610A8C6 /* RJPictureDetailController.m */,
+				FCE968A92CE7AFAEB8CE284C /* RJPictureDetailController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCE96F5688D4B2E589C21998 /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCE967888AAA66F272B5E585 /* RJNewsCellData.h */,
+				FCE967FEEA2F9AC5BDDA2FBB /* RJNewsCellData.m */,
+				FCE96B7FEB58A81CC96EB992 /* RJNewsCellDataVM.h */,
+				FCE96BA26075FEC517A1F419 /* RJNewsCellDataVM.m */,
+				FCE96B033259064028615091 /* RJNewsCellDataKeys.h */,
+				FCE965341E76E8D5003BDAC8 /* RJNewsCellDataKeys.m */,
+				FCE96C2372D5698D30480A42 /* RJNewsCellDataPics.h */,
+				FCE96C4DD3A75E970ED45AA2 /* RJNewsCellDataPics.m */,
+				FCE96D58E8B1680BEFF67C12 /* RJNewsCellDataVMData.h */,
+				FCE96B536BEA3571AD8C8C15 /* RJNewsCellDataVMData.m */,
+				FCE96F6F237E89F66BB1894F /* RJNewsCellJsonToModel.h */,
+				FCE96B2ACAE0BE220D08AD3C /* RJNewsCellJsonToModel.m */,
+				FCE96EADCC9B5B7796832F96 /* RJNewsCellDataKeysData.h */,
+				FCE96B929B4DD92243C642A5 /* RJNewsCellDataKeysData.m */,
+				FCE96E37DD7183731C3FF755 /* RJNewsCellDataPicsData.h */,
+				FCE96415C2C9C856F6E156BC /* RJNewsCellDataPicsData.m */,
+				FCE963D75BBCD16AFDAD35AB /* RJNewsCellDataVMDataVI.h */,
+				FCE96A2B402DC397CF203100 /* RJNewsCellDataVMDataVI.m */,
+				FCE96E875011F97A765C422B /* RJNewsCellDataVMObject.h */,
+				FCE962FBABBE130B4888EA63 /* RJNewsCellDataVMObject.m */,
+				FCE965BDB711DF9617BC128E /* RJNewsCellDataPicsObject.h */,
+				FCE968CAFD94043F13A72C55 /* RJNewsCellDataPicsObject.m */,
+				FCE96F8EAFE35A5991FCF132 /* RJNewsCellDataVMObjectData.h */,
+				FCE96FB03CB75FA86F3459CF /* RJNewsCellDataVMObjectData.m */,
+				FCE968C88401BAD268CD1026 /* RJNewsCellDataVMObjectDataVI.h */,
+				FCE961480EA2FBFEC9671A1F /* RJNewsCellDataVMObjectDataVI.m */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		FCE96F9E957EAD4F957F3773 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCE96EC774963933B15F6775 /* Info.plist */,
+				FCE9660990125E3F7BE3D657 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCE9624D266BB1ABAE03258E /* MyNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE9654A408C0335B38E920C /* Build configuration list for PBXNativeTarget "MyNewsTests" */;
+			buildPhases = (
+				FCE96E9DF6F60F43E6A4B742 /* Sources */,
+				FCE966C1F00B76EAFFCE7DF3 /* Frameworks */,
+				FCE96E0A00D06440BEBE24BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCE96FF51F51A3CC4F6CB3A1 /* PBXTargetDependency */,
+			);
+			name = MyNewsTests;
+			productName = MyNewsTests;
+			productReference = FCE96F6BFFD0842F3A09C269 /* MyNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCE96927C95B326C14CCD0D5 /* MyNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE96D79968B275C0DF16F50 /* Build configuration list for PBXNativeTarget "MyNews" */;
+			buildPhases = (
+				F3CF0EB2F2D7CE040BDC2EA0 /* Check Pods Manifest.lock */,
+				FCE96A417B1AFC9D01C11FE9 /* Sources */,
+				FCE96B1DA59D7ED0A011547F /* Frameworks */,
+				FCE9649490B955B6A2B5BA0B /* Resources */,
+				21310EC42A6004ED2AD9877B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNews;
+			productName = MyNews;
+			productReference = FCE96DEAF25872ABEA47FD89 /* MyNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCE96B1A6B47527E45A8EA60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = wjdtyp;
+			};
+			buildConfigurationList = FCE96214162C8953DF5B3D2A /* Build configuration list for PBXProject "MyNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCE96BFD527BE788B4B00441;
+			productRefGroup = FCE969F1BE36CC953D2E765C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCE96927C95B326C14CCD0D5 /* MyNews */,
+				FCE9624D266BB1ABAE03258E /* MyNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCE9649490B955B6A2B5BA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BE472F1B9BF83700CDF470 /* RJPictureDetailView.xib in Resources */,
+				FCE96A9A76BECC2FC9721999 /* Images.xcassets in Resources */,
+				FCE964779D458F053A02DBEB /* LaunchScreen.xib in Resources */,
+				FCE96B099B31FA50772113E2 /* Main.storyboard in Resources */,
+				FCE964D9CEAC3A25F09B11F7 /* f.png in Resources */,
+				34890A301B9092F30035DCFC /* RJCustomHDPIC.xib in Resources */,
+				FCE96669895F21BC8BC228E9 /* z.png in Resources */,
+				34890A351B90A0780035DCFC /* RJCustomVIDEO.xib in Resources */,
+				FCE9631915F2E0D76C7DFBA6 /* topimage.png in Resources */,
+				FCE960328F1556878C733B60 /* nonetwork.png in Resources */,
+				FCE9640C1555630FAD883A82 /* ic_setting_normal.png in Resources */,
+				FCE96073EDCA1D1A7DBC2ABF /* ic_setting_selected.png in Resources */,
+				FCE96B5D16BBD9A830AC2D9A /* channel_hot_selected.png in Resources */,
+				34B499831B9313A400422396 /* RJCustomHDPIC.xib in Resources */,
+				FCE966C5A20F3DFEA92F02B1 /* channel_pic_selected.png in Resources */,
+				FCE962F630D46F9591B8C372 /* channel_hot_unselected.png in Resources */,
+				FCE965D708F8786B08FEE319 /* channel_pic_unselected.png in Resources */,
+				FCE96862040C07981549B772 /* channel_video_selected.png in Resources */,
+				FCE968F2F91860EF3F29C261 /* channel_video_unselected.png in Resources */,
+				FCE9601B2A54CA9C629AC2F1 /* ic_download_picture_normal.png in Resources */,
+				FCE967AD9EBB4278B578A384 /* ic_live_event_title_back_n.png in Resources */,
+				34890A281B9060040035DCFC /* RJCustomCMS.xib in Resources */,
+				FCE964E4B7F5770B4FA483D3 /* ic_live_event_title_share_n.png in Resources */,
+				FCE9690B759A08D9A587E8D2 /* ic_living_feed_compete_share.png in Resources */,
+				FCE966F0C4FB3701F418F985 /* ic_live_video_play_big_normal.png in Resources */,
+				34890A371B90A7600035DCFC /* RJCustomURL.xib in Resources */,
+				FCE96372313967F4743FD04F /* RJNewsTypeScrollView.txt in Resources */,
+				FCE9695D891AAE5B307B2555 /* ic_user_guid_change_channel_night.png in Resources */,
+				FCE962B95548A832E26947B6 /* ic_user_guid_click_night.png in Resources */,
+				FCE96EE3A4EC1E823FD6E7E1 /* ic_title_has_collected_pic.png in Resources */,
+				FCE96A24329A3BD57D9055E3 /* ic_title_has_collected_clicked.png in Resources */,
+				FCE96F8988CB925541866922 /* ic_title_like_clicked_night.png in Resources */,
+				FCE96B809222BA0890A0EE27 /* ic_title_has_collected.png in Resources */,
+				FCE96D21C200E60664D1FA79 /* ic_title_has_collected_night.png in Resources */,
+				FCE96CF901DCCCCD21F047CB /* ic_title_collect.png in Resources */,
+				FCE964DD1DB724679CDB8182 /* ic_title_collect_pic_clicked.png in Resources */,
+				FCE96A3CCDBEF49980A0C933 /* ic_title_repost.png in Resources */,
+				FCE96CB4485F04826CA17DFA /* ic_title_has_collected_pic_clicked.png in Resources */,
+				FCE96A44755C64FA795D193F /* ic_title_more.png in Resources */,
+				FCE96B98E1DA665A68AF3052 /* ic_title_collect_pic_night.png in Resources */,
+				FCE96BAF33A4251C470113CC /* ic_title_back_pic_night.png in Resources */,
+				FCE96804633952EDE95BD682 /* ic_title_like.png in Resources */,
+				FCE96230B50181E93CC7F11C /* ic_title_back.png in Resources */,
+				FCE9604794F056BC660FA7DE /* ic_title_back_pic.png in Resources */,
+				FCE964FE8D4EB756186FCE60 /* ic_title_repost_night.png in Resources */,
+				FCE960D98856F7A2EB803BCF /* ic_title_like_night.png in Resources */,
+				FCE9630CE3FA679D2436DD2A /* ic_title_back_night.png in Resources */,
+				FCE9651F941318D4352D6418 /* ic_user_guid_back_night.png in Resources */,
+				FCE96EBCE666ECDDA36B888C /* ic_title_like_pic_clicked_night.png in Resources */,
+				FCE9669403D71F23B8671A9A /* ic_title_repost_pic_clicked_night.png in Resources */,
+				FCE9653FC1D3C748BEBCEA77 /* ic_user_guid_back.png in Resources */,
+				FCE96BDCAD383AFC95FB0254 /* ic_title_has_collected_clicked_night.png in Resources */,
+				FCE96F677DA68DE0993AFB19 /* ic_title_has_liked.png in Resources */,
+				FCE960D0AD670A0209A9701D /* ic_title_has_liked_pic_clicked_night.png in Resources */,
+				FCE96857D68129AE76327285 /* ic_title_repost_pic_clicked.png in Resources */,
+				FCE96838AE4E39BDD7CE7652 /* ic_title_has_liked_pic_night.png in Resources */,
+				FCE9606EB3C02F05C6B2D505 /* ic_title_like_pic_night.png in Resources */,
+				FCE96E107329472E651B4ACB /* ic_title_repost_clicked_night.png in Resources */,
+				FCE968C40E6E1D6AC5D3C9CA /* ic_title_collect_pic_clicked_night.png in Resources */,
+				FCE96F2B2BCDBDE0286A1FC1 /* ic_title_has_liked_clicked_night.png in Resources */,
+				FCE96CA8053ED486DAD2CFB9 /* ic_title_repost_pic.png in Resources */,
+				FCE96D66B5237A52167001F5 /* ic_title_more_pressed.png in Resources */,
+				FCE96D9767BF662633430908 /* ic_title_collect_night.png in Resources */,
+				FCE96105FFC6F53E30A65F28 /* ic_title_has_liked_clicked.png in Resources */,
+				FCE96B2089FEBC052728BA69 /* ic_title_like_clicked.png in Resources */,
+				FCE963D84DC062F8AC79B7CB /* ic_title_has_collected_pic_night.png in Resources */,
+				FCE96DE178453E38E4C45F5E /* ic_title_back_pic_clicked.png in Resources */,
+				FCE96E73D30B804A608B0181 /* ic_title_collect_pic.png in Resources */,
+				FCE9690DEF06FF77AAB13AA7 /* ic_title_has_collected_pic_clicked_night.png in Resources */,
+				FCE9653CC93DDF2AA6D1683A /* ic_title_repost_clicked.png in Resources */,
+				FCE96180678A4F316059CE24 /* ic_title_collect_clicked.png in Resources */,
+				FCE9683F71E5BE7F39363125 /* ic_title_like_pic.png in Resources */,
+				FCE965564EEAA7C83BF68776 /* ic_title_has_liked_pic.png in Resources */,
+				FCE965DD694960CB2B81C627 /* ic_title_has_liked_night.png in Resources */,
+				FCE96E1A3F94F35778206AB6 /* ic_title_has_liked_pic_clicked.png in Resources */,
+				FCE968C16F71AA129B541919 /* ic_title_more_pressed_night.png in Resources */,
+				FCE9651BB916019BEF4EAF98 /* ic_title_repost_pic_night.png in Resources */,
+				FCE96F5CBBCE135584607FCB /* ic_user_guid_change_channel.png in Resources */,
+				FCE96E0AD3FAFE165F0292EE /* ic_title_back_pic_clicked_night.png in Resources */,
+				FCE96DD47DDCD036A7814797 /* ic_title_more_night.png in Resources */,
+				FCE9627CF4F42D698D3F5FCB /* ic_title_back_clicked.png in Resources */,
+				FCE96809758A868815F5DBA4 /* ic_title_collect_clicked_night.png in Resources */,
+				FCE96878FE4A0871D3F03142 /* ic_title_like_pic_clicked.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE96E0A00D06440BEBE24BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21310EC42A6004ED2AD9877B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3CF0EB2F2D7CE040BDC2EA0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCE96A417B1AFC9D01C11FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE9667EC26D7F5F441D6228 /* main.m in Sources */,
+				FCE96F2B0C6330F4AB395A24 /* Reachability.m in Sources */,
+				FCE962557DA7D7952CB2B5CB /* RJNewsHttpHelper.m in Sources */,
+				FCE9658502564A630F344B1F /* RJNewsNewsHelper.m in Sources */,
+				FCE964B5BE599EFEC7B9BCDD /* CoreStatus.m in Sources */,
+				FCE960C3465AD9302133EA26 /* RJAppDelegate.m in Sources */,
+				FCE966E8DDE5A14B4712EB2C /* RJTabBarController.m in Sources */,
+				FCE96200E96FA5CBE145DE23 /* RJNewsTypeScrollView.m in Sources */,
+				FCE96A1EB065B47DB6CE17BD /* RJNewsTypeButton.m in Sources */,
+				FCE96762DB4BC88A64DFF99A /* RJRequestParam.m in Sources */,
+				FCE964607A2D2F4A85924064 /* RJNewsHdpicList.m in Sources */,
+				FCE96A0CAAE0539499AB08CA /* RJNewsGroups.m in Sources */,
+				FCE9696F478586A15AEEB6E6 /* RJNewsNewsHeadLines.m in Sources */,
+				FCE96EDD31E095C3E0BA0653 /* RJNewsFS.m in Sources */,
+				FCE96180B09128B1AD190A32 /* RJNewsVideo2Object.m in Sources */,
+				FCE9663A1934294E2B41BDFF /* RJNewsNews2.m in Sources */,
+				FCE968D94035037AA8ADBDB7 /* RJNewsHdpic2Object.m in Sources */,
+				FCE96056AD61CBCDD3021827 /* RJNewsFSO.m in Sources */,
+				FCE969584BE3C8C8BDC09BA9 /* RJNewsData.m in Sources */,
+				FCE96EA5D55BC17ABAB9B20E /* RJNewsJsonToObject.m in Sources */,
+				FCE966F7426149B39050076A /* RJNewsVideoList.m in Sources */,
+				FCE964965C86B0CECA11962E /* RJNewsNewsHeadLinesList.m in Sources */,
+				FCE9617A554448B58C360E3E /* RJNewsType.m in Sources */,
+				FCE96F5BB628EE41F215794F /* RJNewsFSList.m in Sources */,
+				FCE96EDC892E64DD7A830760 /* RJNewsNewsHeadLinesObject.m in Sources */,
+				34890A2E1B9092C60035DCFC /* RJCustomHDPICCell.m in Sources */,
+				FCE9647B3D6E0AADBB761287 /* RJNewsNews2Object.m in Sources */,
+				34890A2B1B9060FA0035DCFC /* RJCustomCMSCell.m in Sources */,
+				34890A3A1B90A7750035DCFC /* RJCustomURLCell.m in Sources */,
+				FCE963D2A4CF3366D9FFB2E5 /* RJNewsHdpic2.m in Sources */,
+				34890A331B90A0610035DCFC /* RJCustomVIDEOCell.m in Sources */,
+				FCE96A5A598CC34C3D1AA6A4 /* RJNewsVideo2.m in Sources */,
+				FCE96B01F4E11A510EF7CC39 /* RJNewsTypeController.m in Sources */,
+				FCE96F092F516E92FA0218D6 /* RJNewsViewController.m in Sources */,
+				FCE96B67FA4F92209F9A9AA7 /* RJVideoViewController.m in Sources */,
+				FCE96D1FA382A5E25F575562 /* RJSettingViewController.m in Sources */,
+				FCE9651155C8B38FD76EF640 /* RJNewsCellData.m in Sources */,
+				FCE961025E5EFD2A3F877FB5 /* RJNewsCellDataVM.m in Sources */,
+				FCE96C0C49395EFA9F569F19 /* RJNewsCellDataKeys.m in Sources */,
+				FCE96401029C868D0CF3793F /* RJNewsCellDataPics.m in Sources */,
+				FCE967B8A67FBE9C396E0AA9 /* RJNewsCellDataVMData.m in Sources */,
+				FCE96350A4DBF4E876E6043C /* RJNewsCellJsonToModel.m in Sources */,
+				FCE96C347E674865FF620F14 /* RJNewsCellDataKeysData.m in Sources */,
+				FCE967CB5CF1E8661F411008 /* RJNewsCellDataPicsData.m in Sources */,
+				FCE9686C60B2C5E6A65E2F08 /* RJNewsCellDataVMDataVI.m in Sources */,
+				FCE96F19964D984B908A05A8 /* RJNewsCellDataVMObject.m in Sources */,
+				FCE96F137CF9C568A9E3837E /* RJNewsCellDataPicsObject.m in Sources */,
+				FCE96B34F6CD43C191C33851 /* RJNewsCellDataVMObjectData.m in Sources */,
+				FCE9673D111F06679EF452D5 /* RJNewsCellDataVMObjectDataVI.m in Sources */,
+				FCE9640FF0E1CFA99F580D67 /* RJNewsNewsData.m in Sources */,
+				FCE96DFBED08F99C31F64A29 /* RJNewsNewsList.m in Sources */,
+				FCE96F22C0DA5DAE4B6F3B13 /* RJNewsNewsPics.m in Sources */,
+				FCE96CA8E31C7BBFD140D666 /* RJNewsJsonToNews.m in Sources */,
+				FCE9662A76B03B6EAF25BEC4 /* RJNewsNewsPicsList.m in Sources */,
+				FCE96491D2DE6E42DBA4E0CA /* RJNewsNewsListObject.m in Sources */,
+				FCE9644364357BC227878DB5 /* RJNewsNewsListObjectVI.m in Sources */,
+				FCE964E0BA6E8175BE455625 /* RJNewsNewsPicsListObject.m in Sources */,
+				FCE961E8533636BBA8C4200C /* RJNewsNewsCommentCountInfo.m in Sources */,
+				FCE965BEC859A1BE75EEADDA /* RJPictureViewController.m in Sources */,
+				FCE96E94A6E9693C714CD7FD /* RJNewsPictureData.m in Sources */,
+				FCE966E84F27F0BC4FDDCC30 /* RJNewsPictureList.m in Sources */,
+				FCE96F1E86D788A0A93AB7D0 /* RJNewsJsonToPicture.m in Sources */,
+				FCE9667B9911BC34947F861A /* RJNewsPictureListPics.m in Sources */,
+				FCE967C238A8C1616652B0F0 /* RJNewsPictureListObject.m in Sources */,
+				FCE963BA71D8D18950564C33 /* RJNewsPictureListPicsCCI.m in Sources */,
+				FCE96D2F864CDB68D270D83C /* RJNewsPictureListPicsList.m in Sources */,
+				FCE963291E2FD1CD0519B878 /* RJNewsPictureListPicsObject.m in Sources */,
+				FCE96B2F3645BCF20DE5F3C7 /* RJCustomCell.m in Sources */,
+				FCE96CD1C9FC84E501732FD8 /* RJCustomCellHelper.m in Sources */,
+				FCE96BEDA64ABB6BC081DE8E /* RJNewsWebViewController.m in Sources */,
+				FCE96CF1658F551E20878307 /* TADotView.m in Sources */,
+				FCE96122C3BBFC0C33A914B4 /* TAPageControl.m in Sources */,
+				FCE96DB735F1FEBCE4EEEE78 /* TAAbstractDotView.m in Sources */,
+				FCE968EFA5548BB5D2A6E2E0 /* TAAnimatedDotView.m in Sources */,
+				FCE965C450D8B3452E09212F /* SDCycleScrollView.m in Sources */,
+				FCE96BC6CC47140B4E071A8B /* NSData+SDDataCache.m in Sources */,
+				FCE96AF7D2F137E0F3A692D8 /* UIView+SDExtension.m in Sources */,
+				FCE9693C7F3ED44FD5152402 /* SDCollectionViewCell.m in Sources */,
+				FCE966AD4A51C77EFAC0EF7C /* RJNewsVedioInfo.m in Sources */,
+				FCE9640785C10FA9A450C670 /* RJNewsVideoData.m in Sources */,
+				34BE47321B9BFD5100CDF470 /* RJPictureDetailView.m in Sources */,
+				FCE96837024189D35FDA829D /* RJNewsVideoListt.m in Sources */,
+				FCE9606D224B62EB99CDECE5 /* RJNewsJsonToVideo.m in Sources */,
+				FCE96EDC07028F6B9BDEA941 /* RJNewsVideoDataObject.m in Sources */,
+				FCE96165DEE6F041ECED0479 /* RJNewsVideoDataObjectVI.m in Sources */,
+				FCE96BD66D56ECAB976E9FDF /* RJFileDownloadManager.m in Sources */,
+				FCE968EB5B892194694BB301 /* RJVideoDownloadController.m in Sources */,
+				FCE960236CAC457854653B13 /* RJFileDownloadModel.m in Sources */,
+				FCE9608641A564FB96EA8AC7 /* CellContext.m in Sources */,
+				FCE96DC31D39CC6720EE0558 /* CellStrategy.m in Sources */,
+				FCE96673E64B396B3745B931 /* CMSCellStrategy.m in Sources */,
+				FCE96E8408F2959627F16E74 /* URLCellStrategy.m in Sources */,
+				FCE96F3F57008F610E449B38 /* HDPICCellStrategy.m in Sources */,
+				FCE96757D569752CFA4D0BB6 /* VIDEOCellStrategy.m in Sources */,
+				FCE96F977C93E648D8B4ABF7 /* SubjectCellStrategy.m in Sources */,
+				FCE961E95CF1C72B5BA69988 /* RJPictureDetailController.m in Sources */,
+				FCE965C8C815768BBDACF983 /* MBProgressHUD+MJ.m in Sources */,
+				FCE96C1E140402CB20E8634C /* RJNewsSingleton.m in Sources */,
+				FCE96ACE1A962A2210AFAD1C /* RJVideoDetailController.m in Sources */,
+				FCE962FA40038679A7E2017A /* RJNewsURLController.m in Sources */,
+				FCE9615E561F5C55FAD9616E /* RJPictureCellPM.m in Sources */,
+				FCE964761435AFD2BC24F93D /* RJPictureCellData.m in Sources */,
+				FCE9642CBB86290AC27FF568 /* RJPictureCellPMData.m in Sources */,
+				FCE96994CA7407F75BE71F39 /* RJPictureCellPMObject.m in Sources */,
+				FCE963EE592C613DF9E6CC5A /* RJPictureCellJsonToModel.m in Sources */,
+				FCE9678EEE245A06398D67E2 /* RJPictureCellPMObjectData.m in Sources */,
+				FCE96139345670875A717555 /* RJPictureDao.m in Sources */,
+				FCE968273DEB3ABF72A029A4 /* RJColloectModelService.m in Sources */,
+				FCE9632A8B1A08AEBC690B05 /* RJColloectModel.m in Sources */,
+				FCE96FB17536518096D2A2C8 /* RJColloectModelDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE96E9DF6F60F43E6A4B742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE96E6E60503CF9034A0552 /* MyNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCE96FF51F51A3CC4F6CB3A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCE96927C95B326C14CCD0D5 /* MyNews */;
+			targetProxy = FCE961B1D401C374CFFC483A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCE96ADDEAAE11921A067119 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE9608799204BC5A7FEB8D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE96BE5DA1772E92D301A71 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE9673F8BFEF0024237F378 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCE96284DCF3B0EDA2477622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE9640DD664E44F90BB8F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCE964A4C19ED3557BF98E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D171A720EAE693A03B672EC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		FCE967AA1B0E84EB6B599D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyNews.app/MyNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		FCE969FE368FBD379A1AA69C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyNews.app/MyNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		FCE96AE58EC770803C835B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3D6F9EEEA84B2651D3AE43 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCE96214162C8953DF5B3D2A /* Build configuration list for PBXProject "MyNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE9640DD664E44F90BB8F92 /* Debug */,
+				FCE96284DCF3B0EDA2477622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE9654A408C0335B38E920C /* Build configuration list for PBXNativeTarget "MyNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE967AA1B0E84EB6B599D87 /* Debug */,
+				FCE969FE368FBD379A1AA69C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE96D79968B275C0DF16F50 /* Build configuration list for PBXNativeTarget "MyNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE964A4C19ED3557BF98E0F /* Debug */,
+				FCE96AE58EC770803C835B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCE96B1A6B47527E45A8EA60 /* Project object */;
+}

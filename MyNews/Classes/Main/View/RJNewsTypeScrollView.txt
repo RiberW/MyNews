@@ -1,0 +1,111 @@
+//
+// Created by wjdtyp on 15/8/24.
+// Copyright (c) 2015 wjdtyp. All rights reserved.
+//
+#import "RJNewsTypeScrollView.h"
+#import "RJNewsTypeButton.h"
+#import "RJNewsNewsHeadLinesList.h"
+#import "MASConstraint.h"
+#import "View+MASAdditions.h"
+#import "RJNews.h"
+
+#define typeButtonInterval 15
+#define typeButtonWidth 40
+#define typeScrollHeight 34
+#define selectImageViewHeight 4
+
+@interface RJNewsTypeScrollView ()
+@property(strong, nonatomic) NSMutableArray *widthConstraints;
+@end
+
+@implementation RJNewsTypeScrollView {
+
+}
+#pragma mark 根据数组数据创建RJNewsTypeScrollView
+
+- (RJNewsTypeScrollView *)initWithArray:(RJNewsNewsHeadLinesList *)array {
+    for (NSUInteger i = 0; i < array.count; i++) {
+        id object = array[i];
+        RJNewsTypeButton *btn = [[RJNewsTypeButton alloc] init];
+        btn.object = object;
+        NSString *name = [object valueForKey:@"name"];
+        [btn setTitle:name forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(newsTypeClick:) forControlEvents:UIControlEventTouchUpInside];
+        btn.frame = CGRectMake(i * (typeButtonWidth + typeButtonInterval), 0, typeButtonWidth, typeScrollHeight-selectImageViewHeight);
+        if (i == 0) {
+            self.selectButton = btn;
+            [self setupSelectImageView];
+        }
+        [self addSubview:btn];
+    }
+    //设置RJNewsTypeScrollView约束
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.superview);
+        CGSize size = CGSizeMake(RJScreenW, typeScrollHeight);
+        make.size.mas_equalTo(size);
+    }];
+    self.showsHorizontalScrollIndicator = NO;
+    self.alwaysBounceVertical = NO;
+    self.showsVerticalScrollIndicator = NO;
+    self.backgroundColor = [UIColor grayColor];
+    self.contentSize = CGSizeMake(array.count * (typeButtonWidth + typeButtonInterval), typeScrollHeight);
+    return self;
+}
+
+- (void)setupSelectImageView {
+    CGFloat X = CGRectGetMinX(self.selectButton.frame);
+    CGFloat Y = CGRectGetMaxY(self.selectButton.frame);
+    CGFloat W = self.selectButton.frame.size.width;
+    CGFloat H = selectImageViewHeight;
+    CGRect frame = CGRectMake(X, Y, W, H);
+    self.selectImageView.frame = frame;
+    self.selectImageView.backgroundColor = [UIColor redColor];
+    [self addSubview:self.selectImageView];
+}
+
+/**
+ *  设置view的宽高、左边约束，垂直中心约束
+ *  @param view    要设置的view
+ *  @param size    CGSize
+ *  @param left    左边对齐的约束
+ *  @param centerY 垂直中心对齐的约束
+ *  @return 返回宽约束，用于显示、隐藏单个view
+ */
+- (MASConstraint *)setView:(UIView *)view size:(CGSize)size left:(MASViewAttribute *)left centerY:(MASViewAttribute *)centerY {
+    __block MASConstraint *widthConstraint;
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        //宽高固定
+        widthConstraint = make.width.equalTo(@(size.width));
+        make.height.equalTo(@(size.height));
+        //左边约束
+        make.left.equalTo(left);
+        //垂直中心对齐
+        make.centerY.equalTo(centerY);
+    }];
+    return widthConstraint;
+}
+
+
+- (void)newsTypeClick:(RJNewsTypeButton *)btn {
+    self.selectButton = btn;
+    [self setupSelectImageView];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(newsTypeClick:)]) {
+        self.isRefreshing = YES;
+        [self.delegate newsTypeClick:btn];
+    }
+}
+
+- (NSMutableArray *)widthConstraints {
+    if (_widthConstraints == nil) {
+        self.widthConstraints = [NSMutableArray array];
+    }
+    return _widthConstraints;
+}
+
+- (UIImageView *)selectImageView {
+    if (_selectImageView == nil) {
+        self.selectImageView = [[UIImageView alloc] init];
+    }
+    return _selectImageView;
+}
+@end

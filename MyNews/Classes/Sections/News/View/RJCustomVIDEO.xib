@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videocell" rowHeight="198" id="XEn-pp-YGo" customClass="RJCustomVIDEOCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XEn-pp-YGo" id="XKQ-Ks-FJ0">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s98-2e-5Xz">
+                        <rect key="frame" x="5" y="175" width="365" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="0Lc-BB-aCa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPC-FR-PRD">
+                        <rect key="frame" x="5" y="5" width="357" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="wch-B3-c4E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="channel_pic_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="v1x-vY-9BS">
+                        <rect key="frame" x="5" y="26" width="365" height="145"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ic_live_video_play_big_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="VFl-Vm-xog">
+                        <rect key="frame" x="158" y="72" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v1x-vY-9BS" firstAttribute="centerY" secondItem="VFl-Vm-xog" secondAttribute="centerY" id="2Qc-FT-XsS"/>
+                    <constraint firstItem="v1x-vY-9BS" firstAttribute="centerX" secondItem="VFl-Vm-xog" secondAttribute="centerX" id="7s5-LI-E2L"/>
+                    <constraint firstAttribute="trailing" secondItem="s98-2e-5Xz" secondAttribute="trailing" constant="5" id="A5v-Jh-X7H"/>
+                    <constraint firstItem="v1x-vY-9BS" firstAttribute="top" secondItem="PPC-FR-PRD" secondAttribute="bottom" constant="5" id="Fvq-Ng-pP5"/>
+                    <constraint firstItem="PPC-FR-PRD" firstAttribute="leading" secondItem="XKQ-Ks-FJ0" secondAttribute="leading" constant="5" id="ICW-Ib-8nI"/>
+                    <constraint firstItem="PPC-FR-PRD" firstAttribute="top" secondItem="XKQ-Ks-FJ0" secondAttribute="top" constant="5" id="If0-Ei-Xjn"/>
+                    <constraint firstAttribute="bottom" secondItem="s98-2e-5Xz" secondAttribute="bottom" constant="5" id="Rh8-If-Gp3"/>
+                    <constraint firstAttribute="trailing" secondItem="v1x-vY-9BS" secondAttribute="trailing" constant="5" id="Wtl-RM-gHG"/>
+                    <constraint firstItem="s98-2e-5Xz" firstAttribute="leading" secondItem="XKQ-Ks-FJ0" secondAttribute="leading" constant="5" id="hdB-6v-EeG"/>
+                    <constraint firstItem="v1x-vY-9BS" firstAttribute="leading" secondItem="XKQ-Ks-FJ0" secondAttribute="leading" constant="5" id="kPI-bp-CDW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PPC-FR-PRD" secondAttribute="trailing" constant="5" id="mVQ-Ca-8vf"/>
+                    <constraint firstAttribute="bottom" secondItem="v1x-vY-9BS" secondAttribute="bottom" constant="25" id="yy1-XD-5WW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="s98-2e-5Xz" id="TuY-Fl-zFW"/>
+                <outlet property="imgView" destination="v1x-vY-9BS" id="As0-Cg-E6d"/>
+                <outlet property="titleLabel" destination="PPC-FR-PRD" id="oQT-5b-8b4"/>
+            </connections>
+            <point key="canvasLocation" x="269.5" y="265"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="channel_pic_unselected.png" width="30" height="30"/>
+        <image name="ic_live_video_play_big_normal.png" width="64" height="64"/>
+    </resources>
+</document>

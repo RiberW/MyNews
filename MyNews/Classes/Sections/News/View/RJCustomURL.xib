@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cmscell" rowHeight="150" id="mfF-dH-n7b" customClass="RJCustomCMSCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mfF-dH-n7b" id="bey-L6-iZm">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻内容" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dn-Of-qKh">
+                        <rect key="frame" x="145" y="33" width="221" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efk-ik-0bE">
+                        <rect key="frame" x="145" y="5" width="221" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="channel_pic_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-sA-h1N" userLabel="imgview">
+                        <rect key="frame" x="5" y="5" width="135" height="109"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="1My-k8-2NC"/>
+                        </constraints>
+                    </imageView>
+                    <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论数" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBh-w5-7hF">
+                        <rect key="frame" x="336" y="94" width="30" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uWJ-sA-h1N" secondAttribute="bottom" constant="5" id="2rQ-PI-m4a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="efk-ik-0bE" secondAttribute="trailing" constant="5" id="3J3-FK-ayT"/>
+                    <constraint firstItem="0Dn-Of-qKh" firstAttribute="top" secondItem="efk-ik-0bE" secondAttribute="bottom" constant="10" id="93L-2f-swq"/>
+                    <constraint firstItem="uWJ-sA-h1N" firstAttribute="top" secondItem="bey-L6-iZm" secondAttribute="top" constant="5" id="DYr-dZ-gOL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cBh-w5-7hF" secondAttribute="trailing" constant="5" id="HYz-Py-bTP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cBh-w5-7hF" secondAttribute="bottom" constant="5" id="XHf-7D-VpZ"/>
+                    <constraint firstItem="efk-ik-0bE" firstAttribute="leading" secondItem="uWJ-sA-h1N" secondAttribute="trailing" constant="5" id="bXE-RG-aPK"/>
+                    <constraint firstItem="0Dn-Of-qKh" firstAttribute="leading" secondItem="uWJ-sA-h1N" secondAttribute="trailing" constant="5" id="fOh-bN-AbL"/>
+                    <constraint firstItem="uWJ-sA-h1N" firstAttribute="leading" secondItem="bey-L6-iZm" secondAttribute="leading" constant="5" id="oQG-Oe-C1W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0Dn-Of-qKh" secondAttribute="trailing" constant="5" id="pjT-Oj-ggh"/>
+                    <constraint firstItem="uWJ-sA-h1N" firstAttribute="top" secondItem="efk-ik-0bE" secondAttribute="top" id="tog-7W-3ig"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="cBh-w5-7hF" id="iu7-c7-WfC"/>
+                <outlet property="imgView" destination="uWJ-sA-h1N" id="76W-Rf-XTx"/>
+                <outlet property="introLabel" destination="0Dn-Of-qKh" id="ube-2Q-mcE"/>
+                <outlet property="titleLabel" destination="efk-ik-0bE" id="xIn-iL-esf"/>
+            </connections>
+            <point key="canvasLocation" x="263.5" y="252"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="channel_pic_unselected.png" width="30" height="30"/>
+    </resources>
+</document>
